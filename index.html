@@ -1,0 +1,131 @@
+---
+layout: default
+---
+<section class="pt-12 pt-md-14 pb-12 pb-md-15 bg-gray-900" style="margin-top: -83px;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-7 text-center">
+        <!-- Headin -->
+        <h1 class="display-2 font-weight-bold text-white">
+        	Blog post
+        </h1>
+
+        <!-- Text -->
+        <p class="lead text-white-75 mb-4">
+          We design &amp; build products, tools, apps, and sites for companies trying to do great things for our planet.
+        </p>
+
+        <!-- Badges -->
+        <nav class="nav justify-content-center">
+          <a class="badge badge-pill badge-white-soft active mr-1 mb-1" href="#" data-toggle="pill" data-filter="*" data-target="#portfolio">
+            <span class="h6 text-uppercase">All</span>
+          </a>
+          <a class="badge badge-pill badge-white-soft mr-1 mb-1" href="#" data-toggle="pill" data-filter=".ai" data-target="#portfolio">
+            <span class="h6 text-uppercase">Announce</span>
+          </a>
+          <a class="badge badge-pill badge-white-soft mr-1 mb-1" href="#" data-toggle="pill" data-filter=".ai" data-target="#portfolio">
+            <span class="h6 text-uppercase">Ai</span>
+          </a>
+          <a class="badge badge-pill badge-white-soft mr-1 mb-1" href="#" data-toggle="pill" data-filter=".work" data-target="#portfolio">
+            <span class="h6 text-uppercase">Work</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+    <!-- / .row -->
+  </div>
+  <!-- / .container -->
+</section>
+
+
+
+<section class="py-8 py-md-11 mt-n10 mt-md-n14">
+  <div class="container">
+    <div class="row" id="portfolio" data-isotope="{&quot;layoutMode&quot;: &quot;fitRows&quot;}" style="position: relative; height: 2318px;">
+    	{% for post in site.posts limit:site.numFrontPosts %}
+    		{% if forloop.first %}
+		      <div class="col-12 {{ post.category }}" style="position: absolute; left: 0px; top: 0px;">
+		        <!-- Card -->
+		        <a class="card lift lift-lg shadow-light-lg mb-7" href="{{ post.url | prepend: site.baseurl }}">
+		          <!-- Image -->
+		          <img class="card-img-top" src="{{ post.frontImgUrl }}" alt="...">
+		          <!-- Body -->
+		          <div class="card-body">
+		            <!-- Shape -->
+		            <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+		              <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+		              </svg>
+		            </div>
+		            <!-- Preheading -->
+		            <h6 class="text-uppercase mb-1 text-muted"> {{ post.header }}</h6>
+		            <!-- Heading -->
+		            <h4 class="mb-0">{{ post.title }}</h4>
+		          </div>
+		        </a>
+		      </div>
+	      {% else %}
+		      {% if post.frontImgUrl %}
+			      <div class="col-12 col-md-4 flex">
+			        <!-- Card -->
+			        <a class="card lift lift-lg shadow-light-lg mb-7" href="{{ post.url | prepend: site.baseurl }}">
+			          <!-- Image -->
+			          <img class="card-img-top" src="{{ post.frontImgUrl }}" alt="...">
+
+			          <!-- Body -->
+			          <div class="card-body my-auto">
+			            <!-- Preheading -->
+
+			            <h6 class="text-uppercase mb-1 text-muted">{{ post.header}}</h6>
+
+			            <!-- Heading -->
+			            <h4 class="mb-2">{{ post.title }}</h4>
+
+			            <p class="mb-0 text-muted"> {{ post.excerpt or post.content | strip_html | truncatewords: 16 }}</p>
+			          </div>
+			        </a>
+			      </div>
+			    {% else %}
+			    	<div class="col-12 col-md-4 flex">
+			        <!-- Card -->
+			        <a class="card lift lift-lg shadow-light-lg mb-7" href="{{ post.url | prepend: site.baseurl }}">
+			          <!-- Body -->
+			          <div class="card-body my-auto">
+			            <!-- Preheading -->
+			            <h6 class="text-uppercase mb-1 text-muted">{{ post.header}}</h6>
+
+			            <!-- Heading -->
+			            <h4 class="mb-0 mb-2">{{ post.title }}</h4>
+
+			            <p class="mb-0 text-muted"> {{ post.excerpt or post.content | strip_html | truncatewords: 50 }}</p>
+			          </div>
+			        </a>
+			      </div>
+			    {% endif %}
+		   	{% endif %}
+	    {% endfor %}    
+    </div>
+    {% if paginator.previous_page == False%}
+			{% assign offset = site.numfrontpost %}
+		{% else %}
+			{% assign offset = 0 %}
+		{% endif %}
+    <div class="list-group list-group-flush mt-6">
+			{% for post in paginator.posts offset:offset %}
+			  <div class="list-group-item d-flex align-items-center">
+			    <!-- Text -->
+			    <div class="mr-auto">
+			       <h6 class="text-uppercase mb-1 text-muted">{{ post.header}}</h6>
+	            <!-- Heading -->
+	            <a href="{{ post.url | prepend: site.baseurl }}"><h4 class="mb-0">{{ post.title }}</h4></a>
+			    </div>
+			    <!-- Check -->
+			    <div class="badge text-wrap ml-10 text-right" style="width: 12rem;">
+			      <p class="text-uppercase text-muted">{{ post.date | date: "%B %-d, %Y" }}</p>
+			    </div>
+			  </div>
+		  {% endfor %}
+		</div>
+  </div>
+</section>
+

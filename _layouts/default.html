@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+
+    <!-- NAVBAR
+    ================================================== -->
+    {% case page.navBar %}
+      {% when "dark" %}
+        {% include navbar.html classList="navbar-dark" type="boxed"%}
+      {% when "light" %}
+        {% include navbar.html classList="navbar-light" type="boxed"%}
+      {% else %}
+        {% include navbar.html classList="navbar-dark" type="boxed"%}
+    {% endcase %}
+
+  
+    {{ content }}
+    <!-- FOOTER
+    ================================================== -->
+    {% include footer.html classList="bg-light" %}
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    {% include scripts.html%}
+  </body>
+</html>

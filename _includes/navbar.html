@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg {{ include.classList }}">
+  <div class="{% if include.type=='boxed' %} container {% else %} container-fluid {% endif %}">
+
+    <!-- Brand -->
+    <a class="navbar-brand" href="/">
+      <img src="/assets/img/brand.png" class="navbar-brand-img" alt="...">
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapse -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fe fe-x"></i>
+      </button>
+
+      <!-- Button -->
+      <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="#contact-form" data-toggle="smooth-scroll" data-offset="0">
+        Contact
+      </a>
+
+    </div>
+
+  </div>
+</nav>
