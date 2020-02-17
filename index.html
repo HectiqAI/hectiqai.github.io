@@ -12,7 +12,7 @@ layout: default
 
         <!-- Text -->
         <p class="lead text-white-75 mb-4">
-          We design &amp; build products, tools, apps, and sites for companies trying to do great things for our planet.
+          Because we have something to say. 
         </p>
 
         <!-- Badges -->
@@ -38,7 +38,6 @@ layout: default
 </section>
 
 
-
 <section class="py-8 py-md-11 mt-n10 mt-md-n14">
   <div class="container">
     <div class="row" id="portfolio" data-isotope="{&quot;layoutMode&quot;: &quot;fitRows&quot;}" style="position: relative; height: 2318px;">
@@ -58,7 +57,7 @@ layout: default
 		              </svg>
 		            </div>
 		            <!-- Preheading -->
-		            <h6 class="text-uppercase mb-1 text-muted"> {{ post.header }}</h6>
+		            <h6 class="text-uppercase mb-1 text-muted">{{ post.date | date: "%B %-d, %Y" }}</h6>
 		            <!-- Heading -->
 		            <h4 class="mb-0">{{ post.title }}</h4>
 		          </div>
@@ -76,7 +75,7 @@ layout: default
 			          <div class="card-body my-auto">
 			            <!-- Preheading -->
 
-			            <h6 class="text-uppercase mb-1 text-muted">{{ post.header}}</h6>
+			            <h6 class="text-uppercase mb-1 text-muted">{{ post.date | date: "%B %-d, %Y" }}</h6>
 
 			            <!-- Heading -->
 			            <h4 class="mb-2">{{ post.title }}</h4>
@@ -92,8 +91,7 @@ layout: default
 			          <!-- Body -->
 			          <div class="card-body my-auto">
 			            <!-- Preheading -->
-			            <h6 class="text-uppercase mb-1 text-muted">{{ post.header}}</h6>
-
+			            <h6 class="text-uppercase mb-1 text-muted">{{ post.date | date: "%B %-d, %Y" }}</h6>
 			            <!-- Heading -->
 			            <h4 class="mb-0 mb-2">{{ post.title }}</h4>
 
@@ -105,13 +103,8 @@ layout: default
 		   	{% endif %}
 	    {% endfor %}    
     </div>
-    {% if paginator.previous_page == False%}
-			{% assign offset = site.numfrontpost %}
-		{% else %}
-			{% assign offset = 0 %}
-		{% endif %}
     <div class="list-group list-group-flush mt-6">
-			{% for post in paginator.posts offset:offset %}
+			{% for post in paginator.posts offset:4 %}
 			  <div class="list-group-item d-flex align-items-center">
 			    <!-- Text -->
 			    <div class="mr-auto">
