@@ -24,14 +24,16 @@ navBar: "light"
 					Have you ever felt like someone is spying on you all over the web? You shop for a pair of shoes online... and curiously enough Facebook Ads suggests you that specific pair of shoes 10 min later. Not any pair of shoes: The EXACT same. What a coincidence!  At Hectiq, we prefer calling this a Deep Learning Workstation Ad Network, and it’s following us everywhere. Welcome to the wonderful world of third-party cookies, real time bidding and data management platform.
 				</p>
 				<h2 class="font-weight-bold mt-8">
-				  Third-party vs First-party cookie
+				  Third-party vs first-party cookies
 				</h2>
-				<p>
+				<p class="mb-6">
 					If you have never heard of cookies, I recommend you watch this excellent video from Vox. It explains what a third-party cookie is and how it has been the core of the Ad industry for years.
 				</p>
-				<a href="https://www.youtube.com/watch?v=HFyaW50GFOs&t=3s">Video
-				</a>
-				<p>
+        <!-- Youtube video -->
+        <a href="https://www.youtube.com/watch?v=HFyaW50GFOs" data-fancybox >
+          <img src="https://img.youtube.com/vi/HFyaW50GFOs/maxresdefault.jpg" class="img-fluid" alt="...">
+        </a>
+				<p class="mt-6">
 					A cookie is a little piece of data stored somewhere on your browser device. Cookies has been first invented to act as a small and useful short term memory on a specific website. When you add an item to your cart, you’re expecting the site to remember it when you come back the next day. That short term memory is handled by a <i>first-party cookie</i>. A first-party cookie can only be accessed by the website that has set it. Whereas a third-party cookies can be set and accessible by a different website than the one visited. Usually managed by Ad networks, their main job has always been to track you online. And that’s exactly how third-party Ad networks know that you have placed a pair of yellow shoes in your cart yesterday. 
 				</p>
 				<blockquote class="blockquote mb-7 mt-7">
@@ -40,12 +42,11 @@ navBar: "light"
           </p>
         </blockquote>
         <p>
-        	This little piece of information (you’re shopping for a pair of shoes) is actually quite valuable. Ad networks collect all these data about you for ad retargeting. Next time they see you online, they can show you the ad specially tailored for you (spoiler: it may involve shoes). 
+        	This little piece of information (you’re shopping for a pair of shoes) is actually quite valuable. Ad networks collect all these data about you for ad retargeting. Next time they see you online, they can show you the ad specially tailored for you (spoiler: it involves shoes). 
         </p>
         <p>
         	Usage of third-party cookies raises serious concerns for user privacy. The good news is that the days of third-party cookies are counted.
         </p>
-				
 				<p>
 					With new regulation in place like General Data Protection Regulation in Europe (GPDR) and the new California Consumer Privacy Act (CCPA), usage of third-party cookies will become essentially illegal. One of the key aspects of those regulations is the right to be forgotten:
 				</p>
@@ -77,7 +78,7 @@ navBar: "light"
         </p>
 
         <p>
-        	Two weeks ago Google announced their intentions to completely phase out third-party cookies in Chrome within two years. This announcement puts the final nail in the coffin for third-party cookies. Marketers and Brands now need to find other ways to make their marketing as effective while respecting the new privacy rules. <br><strong>Compagnies that still don't have any plan about this right now will be left behind. </strong>
+        	Two weeks ago Google announced their intentions to completely phase out third-party cookies in Chrome within two years. This announcement puts the final nail in the coffin for third-party cookies. Marketers and Brands now need to find other ways to make their marketing as effective while respecting the new privacy rules. <span class="text-primary">Compagnies that still don't have any plan about this right now will be left behind. </span>
         </p>
         <h2 class="font-weight-bold mt-8">
 				  Learning to know your audience using first-party contextual data only.
