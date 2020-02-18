@@ -24,7 +24,7 @@ authors: ["Martin Laprise"]
 				</p>
 				<hr class="hr-md mb-7">
 				<p>
-					Have you ever felt like someone is spying on you all over the web? You shop for a pair of shoes online... and curiously enough Facebook Ads suggests you that specific pair of shoes 10 min later. Not any pair of shoes: The EXACT same. What a coincidence!  At Hectiq, we prefer calling this a Deep Learning Workstation Ad Network, and it’s following us everywhere. Welcome to the wonderful world of third-party cookies, real time bidding and data management platform.
+					Have you ever felt like someone is spying on you all over the web? You shop for a pair of shoes online... and curiously enough Facebook Ads suggests you that specific pair of shoes 10 min later. Not any pair of shoes: The EXACT same pair. What a coincidence right!?  At Hectiq, we prefer calling this a Deep Learning Workstation Ad Network, and it’s following us everywhere. Welcome to the wonderful world of third-party cookies, real time bidding and data management platform.
 				</p>
 				<h2 class="font-weight-bold mt-8">
 				  Third-party vs first-party cookies
@@ -37,18 +37,18 @@ authors: ["Martin Laprise"]
           <img src="https://img.youtube.com/vi/HFyaW50GFOs/maxresdefault.jpg" class="img-fluid" alt="...">
         </a>
 				<p class="mt-6">
-					A cookie is a little piece of data stored somewhere on your browser device. Cookies has been first invented to act as a small and useful short term memory on a specific website. When you add an item to your cart, you’re expecting the site to remember it when you come back the next day. That short term memory is handled by a <i>first-party cookie</i>. A first-party cookie can only be accessed by the website that has set it. Whereas a third-party cookies can be set and accessible by a different website than the one visited. Usually managed by Ad networks, their main job has always been to track you online. And that’s exactly how third-party Ad networks know that you have placed a pair of yellow shoes in your cart yesterday. 
+					A cookie is a little piece of data stored somewhere on your browser's device. Cookies has been first invented to act as a small and useful short term memory on a specific website. When you add an item to your cart, you’re expecting the site to remember it when you come back the next day. That short term memory is handled by a <i>first-party cookie</i>. It can only be accessed by the website itself. Whereas a third-party cookies can be set and access by a different website than the one it was created in. Usually managed by Ad networks, their main job has always been to track you online. And that’s exactly how third-party Ad networks know that you have placed a pair of yellow shoes in an online cart yesterday. 
 				</p>
 				<blockquote class="blockquote mb-7 mt-7">
           <p class="h2 mb-0 text-center text-primary-desat">
-            “A first-party cookie can only be accessed by the website that has set it. Whereas a third-party cookies can be set and accessible by a different website than the one visited”
+            “A first-party cookie can only be accessed by the website that has set it. Whereas a third-party cookies can be set and access by a different website than the one it was created in.”
           </p>
         </blockquote>
         <p>
-        	This little piece of information (you’re shopping for a pair of shoes) is actually quite valuable. Ad networks collect all these data about you for ad retargeting. Next time they see you online, they can show you the ad specially tailored for you (spoiler: it involves shoes). 
+        	This little piece of information (you shopping for a pair of shoes) is actually quite valuable. Ad networks collect all these data about you for ad retargeting. Next time they see you online, they can show you the ad specially tailored for you (spoiler: it involves shoes). 
         </p>
         <p>
-        	Usage of third-party cookies raises serious concerns for user privacy. The good news is that the days of third-party cookies are counted.
+        	Usage of third-party cookies raises serious concerns for user privacy and the good news is that the days of third-party cookies are counted.
         </p>
 				<p>
 					With new regulation in place like General Data Protection Regulation in Europe (GPDR) and the new California Consumer Privacy Act (CCPA), usage of third-party cookies will become essentially illegal. One of the key aspects of those regulations is the right to be forgotten:
@@ -81,37 +81,50 @@ authors: ["Martin Laprise"]
         </p>
 
         <p>
-        	Two weeks ago Google announced their intentions to completely phase out third-party cookies in Chrome within two years. This announcement puts the final nail in the coffin for third-party cookies. Marketers and Brands now need to find other ways to make their marketing as effective while respecting the new privacy rules. <span class="text-primary">Compagnies that still don't have any plan about this right now will be left behind. </span>
+        	Two weeks ago, Google announced their intentions to completely phase out third-party cookies in Chrome within two years. This announcement puts the final nail in the coffin for third-party cookies. Marketers and Brands now need to find other ways to make their marketing as effective while respecting the new privacy rules. <span class="text-primary">Compagnies that still don't have any plan about this right now will be left behind. </span>
         </p>
         <h2 class="font-weight-bold mt-8">
 				  Learning to know your audience using first-party contextual data only.
 				</h2>
 
 				<p>
-					VoxMedia is one of the biggest and most respected digital media companies in the US. They have properties like The Verge, Vox, Eater, Polygon, Curbed, SB Nation, etc. They are receiving an incredible amount of visitors every day. On every clicks, their system makes a bunch of serious decisions. Which content should they show the user? Which Ad content is the most relevant? And they need to do that a thousand times per second.
+					VoxMedia is one of the biggest and most respected digital media companies in the US. They have properties like The Verge, Vox, Eater, Polygon, Curbed, SB Nation, etc. They are receiving an incredible amount of visitors every day. Their system makes a great deal of serious decisions on every clicks. Which content should they show the user? Which Ad content is the most relevant? And they need to answer those questions a thousand times per second.
 				</p>
 
 				<p>
-					Months ago, VoxMedia approached us with an interesting challenge. Would it be possible to leverage the latest AI methods to build a respectful audience segmentation technology without relying on any third-party data? Instead, the prediction could be based on what users have interacted on their properties, namely <span class="text-primary">contextual data</span>.  It can be the title of the clicked articles, the time of the day, the user device, etc..
+					Months ago, VoxMedia approached us with an interesting challenge. Would it be possible to leverage the latest AI methods to build a respectful audience segmentation technology without relying on any third-party data? Instead, the prediction could be based on what users have interacted with while browsing their own websites, namely <span class="text-primary">contextual data</span>.  It can be the title of the clicked articles, the time of the day, the user's device, etc..
 				</p>
-
+				<blockquote class="blockquote mb-7 mt-7">
+          <p class="h2 mb-0 text-center text-primary-desat">
+            “Would it be possible to leverage the latest AI methods to build a respectful audience segmentation technology without relying on any third-party data?”
+          </p>
+        </blockquote>
 				<p>
 					Doing ad retargeting by tracking users all over the web is pretty much like fishing using bottom trawling. It might work, but you’re gathering a whole lot of other data in the process which is highly problematic for the user privacy. It turns out that if you want to learn more about your audience by using only contextual data, you need to be much smarter about how you’re using the few data points you have. 
 				</p>
 				<p>
-					Most of the data you have about the audience is how they are interacting with the content you placed on your website. For digital media companies, like VoxMedia, this content is mostly texts, images, and videos. Thanks to the latest advance in deep learning, we are now much better at analyzing the content of images and texts than just a few years ago. Using Convolutional Neural Network we can now really get a sense of what an image is all about. The same type of analysis can be achieved on texts using state-of-the-art Transformer models (like BERT, ELMO, GPT2, etc.) trained on huge amounts of data. Assuming you can describe in minute details the nature of the content, the challenge is to turn how users interact with your content into interests and intends.
+					Most of the data you have about the audience is how they are interacting with the content you placed on your website. For digital media companies, like VoxMedia, this content is mostly texts, images, and videos. Thanks to the latest advance in deep learning, we are now much better at analyzing the content of images and texts than just a few years ago. Using Convolutional Neural Network, we can now really get a sense of what an image is all about. 
 				</p>
-
+        <p>
+          The same type of analysis can be achieved on texts using state-of-the-art Transformer models (like BERT, ELMO, GPT2, etc.) trained on huge amounts of data. Assuming that you can describe in great detail the nature of the content in matter of minutes, the challenge is to turn users interactions with your content into interests and intends.
+        </p>
+        <blockquote class="blockquote mb-7 mt-7">
+          <p class="h2 mb-0 text-center text-primary-desat">
+            “As a content provider, the beauty of this approach is that the deep learning models are powered by your own content. ”
+          </p>
+        </blockquote>
 				<p>
-					We can illustrate the task using a classic example. You have a restaurant and a new client comes in. You have essentially two ways to know more about him. You can either track him everywhere and note every restaurants he visited in the last months. This would be quite creepy and equivalent of using a third-party cookie. Or you can use the first-party data approach and note what he ordered and liked the last time he visited you own restaurant. If you have a deep understanding of all the meals served in your restaurant, you can do a pretty good job of predicting his interests. You can even add up other variables like the day and hour of the week to polish it. As a content provider, the beauty of this approach is that the deep learning models are powered by your own content. 
+					We can illustrate this task using a classic example. You have a restaurant and a new client comes in. You have essentially two ways to know more about him. You can track him everywhere and note every restaurants he visited in the last months. This would be quite creepy and equivalent of using a third-party cookie. Or you can use the first-party data approach and keep track of what he ordered and liked the last time he visited your own restaurant. If you have a deep understanding of all the meals served in your restaurant, you can do a pretty good job of predicting its interests. You can even add up other variables like the day and hour of the week the client was here to polish it. 
 				</p>
-
+        <p>
+          As a content provider, the beauty of this approach is that the deep learning models are powered by your own content. 
+        </p>
 				<h2 class="font-weight-bold mt-8">
 				  Toward a first-party segmentation system
-				</h2>
+        </h2>
 
 				<p>
-					A first-party segmentation system is designed to describe the audience interests based on the viewed content. An example of those segments could be something specific like Camera Enthusiast Currently Shopping. In order to be effective, this system is required to fulfill a number of features. 
+					A first-party segmentation system is designed to describe the audience interests based on its viewed content. An example of those segments could be something specific like "Camera Enthusiast Currently Shopping". In order to be effective, this system is required to fulfill a number of features: 
 				</p>
 				<ul class="list-unstyled mb-7">
           <li class="d-flex">
@@ -121,7 +134,7 @@ authors: ["Martin Laprise"]
             <p>
             	<span class="font-weight-bold text-primary">The model needs to learn from large volume of historical data.</span><br>
             	<span class="text-muted">
-              It must find and learn interesting patterns and “natural” segments in the data. For instance, it may find that a group of users visit the same content because of a similar interest. It will then be labelled "Camera Enthusiast Currently Shopping". 
+              It must find and learn interesting patterns and "natural" segments in the data. For instance, it may find that a group of users visit the same content because of a similar interest. It will then be labelled as something like "Camera Enthusiast Currently Shopping". 
             	</span>
             </p>
           </li>
