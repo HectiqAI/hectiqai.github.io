@@ -170,7 +170,7 @@ authors: ["Martin Laprise"]
         </p>
 
         <p>
-        	These models fulfill all the requirements and even more. The prediction does not require the actual identity of the user. It is powered by the content owned by the plateform, not the user features. The segments are also perfectly inductive, namely that it is trained on historical data but generalize to unseen pieces of content.
+        	These models fulfill all the requirements and even more. The prediction does not require the actual identity of the user. It is powered by the content owned by the platform, not the user features. The segments are also perfectly inductive, namely that it is trained on historical data but generalize to unseen pieces of content.
         </p>
 
         <p>
