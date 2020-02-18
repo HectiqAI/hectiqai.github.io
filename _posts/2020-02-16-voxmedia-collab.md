@@ -6,23 +6,17 @@ header: "Big achievement"
 categories: [project]
 tags: [project, work, voxmedia, gnn]
 frontImgUrl: '/assets/img/photos/voxmediapost.svg'
+frontWideImg: "/assets/img/photos/voxmediapost-wide.svg"
 navBar: "light"
+by: "Martin Laprise, Chief Scientist & Founder of Hectiq.ai"
 authors: ["Martin Laprise"]
+summary: "Hectiq.Ai completed a first project"
 ---
-<section data-jarallax data-speed=".8" class="py-12 py-md-15 py-sm-0 bg-cover jarallax" style="background-image: url(/assets/img/photos/voxmediapost-wide.svg);"></section>
 
-<section class="pt-8 pt-md-11 pb-0">
+<section class="pt-0 pt-md-0 pb-0">
 	<div class="container">
 	  <div class="row justify-content-center">
 	    <div class="col-12 col-md-12 col-lg-10 col-xl-9">
-	    	<h6 class="text-uppercase mb-1 text-muted">{{ page.date | date: "%B %-d, %Y" }}</h6>
-				<h1 class="display-4 font-weight-bold">
-				   VoxMedia: Building a privacy-friendly first-party data segmentation platform.
-				</h1>
-				<p class="lead mb-7 text-muted">
-				  And this should be your summary. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum quam. Fusce pellentesque faucibus lorem at viverra. Integer at feugiat odio. In placerat euismod risus proin.
-				</p>
-				<hr class="hr-md mb-7">
 				<p>
 					Have you ever felt like someone is spying on you all over the web? You shop for a pair of shoes online... and curiously enough Facebook Ads suggests you that specific pair of shoes 10 min later. Not any pair of shoes: The EXACT same. What a coincidence!  At Hectiq, we prefer calling this a Deep Learning Workstation Ad Network, and it’s following us everywhere. Welcome to the wonderful world of third-party cookies, real time bidding and data management platform.
 				</p>
