@@ -24,7 +24,7 @@ authors: ["Martin Laprise"]
 				</p>
 				<hr class="hr-md mb-7">
 				<p>
-					Have you ever felt like someone is spying on you all over the web? You shop for a pair of shoes online... and curiously enough Facebook Ads suggests you that specific pair of shoes 10 min later. Not any pair of shoes: The EXACT same. What a coincidence!  At Hectiq, we prefer calling this a Deep Learning Workstation Ad Network, and it’s following us everywhere. Welcome to the wonderful world of third-party cookies, real time bidding and data management platform.
+					Have you ever felt like someone is spying on you all over the web? You shop for a pair of shoes online... and curiously enough Facebook Ads suggests you that specific pair of shoes 10 min later. Not any pair of shoes: The EXACT same. What a coincidence! Turns out it’s not a coincidence at all. Welcome to the wonderful world of third-party cookies, real time bidding and data management platform.
 				</p>
 				<h2 class="font-weight-bold mt-8">
 				  Third-party vs first-party cookies
@@ -37,7 +37,7 @@ authors: ["Martin Laprise"]
           <img src="https://img.youtube.com/vi/HFyaW50GFOs/maxresdefault.jpg" class="img-fluid" alt="...">
         </a>
 				<p class="mt-6">
-					A cookie is a little piece of data stored somewhere on your browser device. Cookies has been first invented to act as a small and useful short term memory on a specific website. When you add an item to your cart, you’re expecting the site to remember it when you come back the next day. That short term memory is handled by a <i>first-party cookie</i>. A first-party cookie can only be accessed by the website that has set it. Whereas a third-party cookies can be set and accessible by a different website than the one visited. Usually managed by Ad networks, their main job has always been to track you online. And that’s exactly how third-party Ad networks know that you have placed a pair of yellow shoes in your cart yesterday. 
+					A cookie is a little piece of data stored somewhere on your browser device. Cookies has been first invented to act as a small and useful short term memory on a specific website. When you add an item to your cart, you’re expecting the site to remember it when you come back the next day. That short term memory is handled by a <i>first-party cookie</i>. A first-party cookie can only be accessed by the website that has set it. Whereas a third-party cookies can be set and accessible by a different website than the one visited and they are usually managed by Ad networks or analytics tools. And that’s exactly how they can know that you have placed a pair of yellow shoes in your cart yesterday. 
 				</p>
 				<blockquote class="blockquote mb-7 mt-7">
           <p class="h2 mb-0 text-center text-primary-desat">
@@ -51,7 +51,7 @@ authors: ["Martin Laprise"]
         	Usage of third-party cookies raises serious concerns for user privacy. The good news is that the days of third-party cookies are counted.
         </p>
 				<p>
-					With new regulation in place like General Data Protection Regulation in Europe (GPDR) and the new California Consumer Privacy Act (CCPA), usage of third-party cookies will become essentially illegal. One of the key aspects of those regulations is the right to be forgotten:
+					With new regulation in place like General Data Protection Regulation in Europe (GPDR) and the new California Consumer Privacy Act (CCPA), usage of third-party cookies while staying full compliant with become harder and harder. One of the key aspects of those regulations is the right to be forgotten:
 				</p>
 				<ul class="list-unstyled mb-6 mt-7">
           <li class="d-flex">
