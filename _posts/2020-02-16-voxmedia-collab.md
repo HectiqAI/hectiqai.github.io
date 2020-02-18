@@ -7,13 +7,11 @@ categories: [project]
 tags: [project, work, voxmedia, gnn]
 frontImgUrl: '/assets/img/photos/voxmediapost.svg'
 navBar: "light"
+authors: ["Martin Laprise"]
 ---
 <section data-jarallax data-speed=".8" class="py-12 py-md-15 py-sm-0 bg-cover jarallax" style="background-image: url(/assets/img/photos/voxmediapost-wide.svg);"></section>
 
-
-
-
-<section class="pt-8 pt-md-11 pb-8">
+<section class="pt-8 pt-md-11 pb-0">
 	<div class="container">
 	  <div class="row justify-content-center">
 	    <div class="col-12 col-md-12 col-lg-10 col-xl-9">
@@ -187,5 +185,3 @@ navBar: "light"
 	  </div> <!-- / .row -->
 	</div> <!-- / .container -->
 </section>
-
-

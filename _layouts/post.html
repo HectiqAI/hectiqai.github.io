@@ -4,4 +4,27 @@ layout: default
 
 <body data-aos-easing="ease-out-quad" data-aos-duration="700" data-aos-delay="0">
   {{ content }}
+
+
+	<section class="pt-2 pt-md-11 pb-8">
+	  <div class="container">
+	    <hr class="border-gray-300">
+	    <div class="list-group list-group-flush border-0">
+	      <div class="list-group-item d-flex align-items-center">
+	        <div class="row">
+	          <p class="text-muted mb-1 mr-12 ml-8">
+	            Authors
+	          </p>
+	          <p class="font-size-sm text-muted mb-0">
+	            {{ page.authors | join: ", "}}
+	          </p>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</section>
+
+
 </body>
+
+
