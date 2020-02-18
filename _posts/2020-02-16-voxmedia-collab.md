@@ -134,7 +134,7 @@ authors: ["Martin Laprise"]
             <p>
             	<span class="font-weight-bold text-primary">The model needs to learn from large volume of historical data.</span><br>
             	<span class="text-muted">
-              It must find and learn interesting patterns and "natural" segments in the data. For instance, it may find that a group of users visit the same content because of a similar interest. It will then be labelled as something like "Camera Enthusiast Currently Shopping". 
+              It must find and learn interesting patterns and "natural" segments in the data. For instance, it may find that a group of users visit the same content because of a similar interest. It will then be labelled as something like <i>Camera Enthusiast Currently Shopping</i>. 
             	</span>
             </p>
           </li>
@@ -167,11 +167,10 @@ authors: ["Martin Laprise"]
             <p>
             	<span class="font-weight-bold text-primary">The prediction should be valid on unseen data.</span><br>
             	<span class="text-muted">
-              For instance, if a user clicks on a recently published article about a new camera, the model should be able to assign the "Camera Enthusiast" segment even if the article is absent from the historical data. 
+              For instance, if a user clicks on a recently published article about a new camera, the model should be able to assign the <i>Camera Enthusiast</i> segment even if the article is absent from the historical data. 
             	</span>
             </p>
           </li>
-
         </ul>
 
         <p>
@@ -183,14 +182,47 @@ authors: ["Martin Laprise"]
         </p>
 
         <p>
-        	These models fulfill all the requirements and even more. The prediction does not require the actual identity of the user. It is powered by the content owned by the platform, not the user features. The segments are also perfectly inductive, namely that it is trained on historical data but generalize to unseen pieces of content.
+          These models fulfill all the requirements and even more: 
         </p>
 
+        <ul class="list-unstyled mb-6 mt-7">
+          <li class="d-flex">
+            <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+              <i class="fe fe-check"></i>
+            </div>
+            <p>
+              The prediction does not require the actual identity of the user.
+            </p>
+          </li>
+          <li class="d-flex">
+            <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+              <i class="fe fe-check"></i>
+            </div>
+            <p>
+              It is powered by the content owned by the platform, not the user features.
+            </p>
+          </li>
+          <li class="d-flex">
+            <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+              <i class="fe fe-check"></i>
+            </div>
+            <p>
+              The segments are also perfectly inductive, namely that it is trained on historical data but generalize to unseen pieces of content.
+            </p>
+          </li>
+        </ul>
+    
         <p>
-        	At the end, those contextual predictions are much more effective for the brand and more privacy-friendly. And all this is happening many hundreds of times per sec, everytime a user is interacting with a piece of content on VoxMedia Network!
+        	At the end, those contextual predictions are much more effective for the brand and more privacy-friendly than third-party cookies ever were. And all this is happening many hundreds of times per sec; everytime a user is interacting with a piece of content on VoxMedia Network!
         </p>
+        <blockquote class="blockquote mb-7 mt-7">
+          <p class="h2 mb-0 text-center text-primary-desat">
+            “        At the end, those contextual predictions are much more effective for the brand and more privacy-friendly than third-party cookies ever were.
+            ”
+          </p>
+        </blockquote>
         <p>
-        	VoxMedia first-party segmentation platform is an impressive piece of technology and we’re are really proud, at Hectiq to have participate to his elaboration. Brands using VoxMedia's new platform can now connect effectively to their audience and they can do it in a privacy-friendly way.
+        	VoxMedia first-party segmentation platform is an impressive piece of technology and we’re are really proud, at Hectiq to have participate in its elaboration. Brands using VoxMedia's new platform can now connect effectively to their audience and more importantly, they can do it in a privacy-friendly way.
         </p>
 
 
