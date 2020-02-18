@@ -25,7 +25,9 @@ layout: default
 <section class="py-8 py-md-11 mt-n10 mt-md-n14">
   <div class="container">
     <div class="row" id="portfolio" >
-    	{% for post in site.posts limit:site.numFrontPosts %}
+    	{% assign show_posts = site.posts | where: "hide", false | sort: "date" | reverse %}
+    	{% for post in show_posts limit:site.numFrontPosts %}
+
     		{% if forloop.first %}
 		      <div class="col-12 {{ post.category }}">
 		        <!-- Card -->
@@ -88,7 +90,7 @@ layout: default
 	    {% endfor %}    
     </div>
     <div class="list-group list-group-flush mt-6">
-			{% for post in paginator.posts offset:4 %}
+			{% for post in paginator.posts offset:4 | sort: "date" | reverse %}
 			  <div class="list-group-item d-flex align-items-center">
 			    <!-- Text -->
 			    <div class="mr-auto">
