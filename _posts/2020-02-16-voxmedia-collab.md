@@ -73,7 +73,7 @@ authors: ["Martin Laprise"]
         </ul>
 
         <p>
-        	Fulfilling those two simple requirements is nearly impossible with third-party data. For instance, when an ad network tracks your action on your favorite shoes website, this information is automatically broadcasted and shared among multitudes of other systems. From that point, the shoes website no longer controls where this data goes. Even if requested, it becomes practically impossible to delete this data or even diging up where it went.
+        	Fulfilling those two simple requirements is nearly impossible with third-party data. For instance, when an ad network tracks your action on your favorite shoes website, this information is automatically broadcasted and shared among multitudes of other systems. From that point, the shoes website no longer controls where this data goes. Even if requested, it becomes practically impossible to delete this data or even digging up where it went.
         </p>
 
         <p>
@@ -81,7 +81,7 @@ authors: ["Martin Laprise"]
         </p>
 
         <p>
-        	Two weeks ago Google announced their intentions to completely phase out third-party cookies in Chrome within two years. This announcement puts the final nail in the coffin for third-party cookies. Marketers and Brands now need to find other ways to make their marketing as effective while respecting the new privacy rules. <span class="text-primary">Compagnies that still don't have any plan about this right now will be left behind. </span>
+        	Two weeks ago Google announced their intentions to completely phase out third-party cookies in Chrome within two years. This announcement puts the final nail in the coffin for third-party cookies. Marketers and Brands now need to find other ways to make their marketing as effective while respecting the new privacy rules. <span class="text-primary">Compagies that still don't have any plan about this right now will be left behind. </span>
         </p>
         <h2 class="font-weight-bold mt-8">
 				  Learning to know your audience using first-party contextual data only.
@@ -99,11 +99,11 @@ authors: ["Martin Laprise"]
 					Doing ad retargeting by tracking users all over the web is pretty much like fishing using bottom trawling. It might work, but you’re gathering a whole lot of other data in the process which is highly problematic for the user privacy. It turns out that if you want to learn more about your audience by using only contextual data, you need to be much smarter about how you’re using the few data points you have. 
 				</p>
 				<p>
-					Most of the data you have about the audience is how they are interacting with the content you placed on your website. For digital media companies, like VoxMedia, this content is mostly texts, images, and videos. Thanks to the latest advance in deep learning, we are now much better at analyzing the content of images and texts than just a few years ago. Using Convolutional Neural Network we can now really get a sense of what an image is all about. The same type of analysis can be achieved on texts using state-of-the-art Transformer models (like BERT, ELMO, GPT2, etc.) trained on huge amounts of data. Assuming you can describe in minute details the nature of the content, the challenge is to turn how users interact with your content into interests and intends.
+					Most of the data you have about the audience is how they are interacting with the content you placed on your website. For digital media companies, like VoxMedia, this content is mostly texts, images, and videos. Thanks to the latest advance in deep learning, we are now much better at analyzing the content of images and texts than just a few years ago. Using Convolutional Neural Network we can now really get a sense of what an image is all about. The same type of analysis can be achieved on texts using state-of-the-art Transformer models (like BERT, ELMO, GPT2, etc.) trained on huge amounts of data. Assuming you can describe in minute details the nature of the content, the challenge is to turn how users interact with your content into interests and intents.
 				</p>
 
 				<p>
-					We can illustrate the task using a classic example. You have a restaurant and a new client comes in. You have essentially two ways to know more about him. You can either track him everywhere and note every restaurant he visited in the last months. This would be quite creepy and equivalent to using a third-party cookie. Or you can use the first-party data approach and note what he ordered and liked the last time he visited your own restaurant. If you have a deep understanding of all the meals served in your restaurant, you can do a pretty good job of predicting his interests. You can even add up other variables like the day and hour of the week to polish it. As a content provider, the beauty of this approach is that the deep learning models are powered by your own content. As the amount of content increase in volume and diversity, the more refined you knowledge of your audience will be.
+					We can illustrate the task using a classic example. You have a restaurant and a new client comes in. You have essentially two ways to know more about him. You can either track him everywhere and note every restaurant he visited in the last months. This would be quite creepy and equivalent to using a third-party cookie. Or you can use the first-party data approach and note what he ordered and liked the last time he visited your own restaurant. If you have a deep understanding of all the meals served in your restaurant, you can do a pretty good job of predicting his interests. You can even add up other variables like the day and hour of the week to polish it. As a content provider, the beauty of this approach is that the deep learning models are powered by your own content. As the amount of content increases in volume and diversity, the more refined your knowledge of your audience will be.
 				</p>
 
 				<h2 class="font-weight-bold mt-8">
