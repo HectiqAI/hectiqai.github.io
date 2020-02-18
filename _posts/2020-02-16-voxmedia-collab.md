@@ -92,7 +92,7 @@ authors: ["Martin Laprise"]
 				</p>
 
 				<p>
-					Months ago, VoxMedia approached us with an interesting challenge. Would it be possible to leverage the latest AI methods to build a respectful audience segmentation technology without relying on any third-party data? Instead, the prediction could be based on what users have interacted on their properties, namely <span class="text-primary">contextual data</span>.  It can be the title of the clicked articles, the time of the day, the user device, etc..
+					Months ago, VoxMedia approached us with an interesting challenge. Would it be possible to leverage the latest AI methods to build a more privacy-friendly audience segmentation technology without relying on any third-party data? Instead, the prediction could be based on what users have interacted on their properties, namely <span class="text-primary">contextual data</span>.  It can be the title of the clicked articles, the time of the day, the user device, etc..
 				</p>
 
 				<p>
@@ -103,7 +103,7 @@ authors: ["Martin Laprise"]
 				</p>
 
 				<p>
-					We can illustrate the task using a classic example. You have a restaurant and a new client comes in. You have essentially two ways to know more about him. You can either track him everywhere and note every restaurants he visited in the last months. This would be quite creepy and equivalent of using a third-party cookie. Or you can use the first-party data approach and note what he ordered and liked the last time he visited you own restaurant. If you have a deep understanding of all the meals served in your restaurant, you can do a pretty good job of predicting his interests. You can even add up other variables like the day and hour of the week to polish it. As a content provider, the beauty of this approach is that the deep learning models are powered by your own content. 
+					We can illustrate the task using a classic example. You have a restaurant and a new client comes in. You have essentially two ways to know more about him. You can either track him everywhere and note every restaurant he visited in the last months. This would be quite creepy and equivalent to using a third-party cookie. Or you can use the first-party data approach and note what he ordered and liked the last time he visited your own restaurant. If you have a deep understanding of all the meals served in your restaurant, you can do a pretty good job of predicting his interests. You can even add up other variables like the day and hour of the week to polish it. As a content provider, the beauty of this approach is that the deep learning models are powered by your own content. As the amount of content increase in volume and diversity, the more refined you knowledge of your audience will be.
 				</p>
 
 				<h2 class="font-weight-bold mt-8">
@@ -111,7 +111,7 @@ authors: ["Martin Laprise"]
 				</h2>
 
 				<p>
-					A first-party segmentation system is designed to describe the audience interests based on the viewed content. An example of those segments could be something specific like Camera Enthusiast Currently Shopping. In order to be effective, this system is required to fulfill a number of features. 
+					A first-party segmentation system is designed to describe the audience interests and intents based on the viewed content. An example of those segments could be something specific like <i>Camera Enthusiast Currently Shopping</i>. In order to be effective, this system is required to fulfill a number of features. 
 				</p>
 				<ul class="list-unstyled mb-7">
           <li class="d-flex">
