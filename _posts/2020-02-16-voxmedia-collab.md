@@ -12,6 +12,7 @@ by: "Martin Laprise, Chief Scientist & Founder of Hectiq.ai"
 authors: ["Martin Laprise"]
 summary: "Hectiq.ai completes an exciting collaboration with VoxMedia. We developed an Ai model to help VoxMedia better understand their audience. The challenge was tough as the model needed to be privacy-friendly, crazy fast, and highly effective. In this post, we explain what motivated this project, namely getting rid of creepy third-party data, and we discuss how we achieved the task by using state-of-the-art deep learning models. "
 hide: false
+credits: "Bottom trawling illustration from <i>Cold-water Coral Reefs: out of sight - no longer out of mind. UNEP-WCMC Biodiversity Series 22</i>"
 ---
 
 <section class="pt-0 pt-md-0 pb-0">

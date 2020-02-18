@@ -7,7 +7,7 @@ layout: default
       <div class="col-12 col-md-10 col-lg-7 text-center">
         <!-- Headin -->
         <h1 class="display-2 font-weight-bold text-white">
-        	Blog post
+        	Blog posts
         </h1>
 
         <!-- Text -->
@@ -50,42 +50,40 @@ layout: default
 		        </a>
 		      </div>
 	      {% else %}
-		      {% if post.frontImgUrl %}
-			      <div class="col-12 col-md-4 flex">
-			        <!-- Card -->
-			        <a class="card lift lift-lg shadow-light-lg mb-7" href="{{ post.url | prepend: site.baseurl }}">
-			          <!-- Image -->
-			          <img class="card-img-top" src="{{ post.frontImgUrl }}" alt="...">
+	
+	    	<div class="col-12 col-sm-6 col-md-6 col-lg-4 d-flex ">
+		        <!-- Card -->
+		        {%if post.noLink %}
+		        	<div class="card lift lift-lg shadow-light-lg mb-7 bg-{{ post.frontColor }} {% if post.frontColor %}text-light{% endif %}">
+		        {% else %}
+		        	<a class="card lift lift-lg shadow-light-lg mb-7 bg-{{ post.frontColor }} {% if post.frontColor %}text-light{% endif %}" 
+		            href="{{ post.url | prepend: site.baseurl }}">
+		        {% endif %}
+		          <!-- Body -->
+		          {% if post.frontImgUrl %}
+		          	<img class="card-img-top mb-0 mt-0" src="{{ post.frontImgUrl }}" alt="...">
+		          {% endif %}
 
-			          <!-- Body -->
-			          <div class="card-body my-auto">
-			            <!-- Preheading -->
+		          <div class="card-body my-auto">
+		            <!-- Preheading -->
+		            <h6 class="text-uppercase mb-1 {% if post.frontColor%}text-white-50{% else %} text-muted {% endif %}">{{ post.date | date: "%B %-d, %Y" }}</h6>
+		            <!-- Heading -->
+		            <h4 class="mb-0 mb-2">{{ post.title }}</h4>
+		            
+		            {% if post.noLink %}
+		            	{% assign var numWords = 80 %}
+		            {% else %}
+		            	{% assign var numWords = 16 %}
+		            {% endif %}
 
-			            <h6 class="text-uppercase mb-1 text-muted">{{ post.date | date: "%B %-d, %Y" }}</h6>
-
-			            <!-- Heading -->
-			            <h4 class="mb-2">{{ post.title }}</h4>
-
-			            <p class="mb-0 text-muted"> {{ post.excerpt or post.content | strip_html | truncatewords: 16 }}</p>
-			          </div>
-			        </a>
-			      </div>
-			    {% else %}
-			    	<div class="col-12 col-md-4 flex">
-			        <!-- Card -->
-			        <a class="card lift lift-lg shadow-light-lg mb-7" href="{{ post.url | prepend: site.baseurl }}">
-			          <!-- Body -->
-			          <div class="card-body my-auto">
-			            <!-- Preheading -->
-			            <h6 class="text-uppercase mb-1 text-muted">{{ post.date | date: "%B %-d, %Y" }}</h6>
-			            <!-- Heading -->
-			            <h4 class="mb-0 mb-2">{{ post.title }}</h4>
-
-			            <p class="mb-0 text-muted"> {{ post.excerpt or post.content | strip_html | truncatewords: 50 }}</p>
-			          </div>
-			        </a>
-			      </div>
-			    {% endif %}
+		            <p class="mb-0 {% if post.frontColor%}text-white-50{% else %} text-muted {% endif %}"> {{ post.excerpt or post.content | strip_html | truncatewords: numWords }}</p>
+		          </div>
+		        {%if post.noLink %}
+		        	</div>
+		        {% else %}
+		        	</a>
+		        {% endif %}
+	      	</div>
 		   	{% endif %}
 	    {% endfor %}    
     </div>
