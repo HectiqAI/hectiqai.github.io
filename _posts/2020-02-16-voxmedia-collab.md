@@ -10,7 +10,7 @@ frontWideImg: "/assets/img/photos/voxmediapost-wide.svg"
 navBar: "light"
 by: "Martin Laprise, Chief Scientist & Founder of Hectiq.ai"
 authors: ["Martin Laprise"]
-summary: "Hectiq.Ai completed a first project"
+summary: "Hectiq.ai completes an exciting collaboration with Voxmedia and Google. We developed an Ai model "
 ---
 
 <section class="pt-0 pt-md-0 pb-0">
@@ -75,7 +75,7 @@ summary: "Hectiq.Ai completed a first project"
         </p>
 
         <p>
-        	Two weeks ago Google announced their intentions to completely phase out third-party cookies in Chrome within two years. This announcement puts the final nail in the coffin for third-party cookies. Marketers and Brands now need to find other ways to make their marketing as effective while respecting the new privacy rules. <span class="text-primary">Compagies that still don't have any plan about this right now will be left behind. </span>
+        	Two weeks ago Google announced their intentions to completely phase out third-party cookies in Chrome within two years. This announcement puts the final nail in the coffin for third-party cookies. Marketers and Brands now need to find other ways to make their marketing as effective while respecting the new privacy rules. <span class="text-primary">Companies that still don't have any plan about this right now will be left behind. </span>
         </p>
         <h2 class="font-weight-bold mt-8">
 				  Learning to know your audience using first-party contextual data only.
