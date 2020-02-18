@@ -14,22 +14,6 @@ layout: default
         <p class="lead text-white-75 mb-4">
           Because we have something to say. 
         </p>
-
-        <!-- Badges -->
-        <nav class="nav justify-content-center">
-          <a class="badge badge-pill badge-white-soft active mr-1 mb-1" href="#" data-toggle="pill" data-filter="*" data-target="#portfolio">
-            <span class="h6 text-uppercase">All</span>
-          </a>
-          <a class="badge badge-pill badge-white-soft mr-1 mb-1" href="#" data-toggle="pill" data-filter=".ai" data-target="#portfolio">
-            <span class="h6 text-uppercase">Announce</span>
-          </a>
-          <a class="badge badge-pill badge-white-soft mr-1 mb-1" href="#" data-toggle="pill" data-filter=".ai" data-target="#portfolio">
-            <span class="h6 text-uppercase">Ai</span>
-          </a>
-          <a class="badge badge-pill badge-white-soft mr-1 mb-1" href="#" data-toggle="pill" data-filter=".work" data-target="#portfolio">
-            <span class="h6 text-uppercase">Work</span>
-          </a>
-        </nav>
       </div>
     </div>
     <!-- / .row -->
@@ -40,10 +24,10 @@ layout: default
 
 <section class="py-8 py-md-11 mt-n10 mt-md-n14">
   <div class="container">
-    <div class="row" id="portfolio" data-isotope="{&quot;layoutMode&quot;: &quot;fitRows&quot;}" style="position: relative; height: 2318px;">
+    <div class="row" id="portfolio" >
     	{% for post in site.posts limit:site.numFrontPosts %}
     		{% if forloop.first %}
-		      <div class="col-12 {{ post.category }}" style="position: absolute; left: 0px; top: 0px;">
+		      <div class="col-12 {{ post.category }}">
 		        <!-- Card -->
 		        <a class="card lift lift-lg shadow-light-lg mb-7" href="{{ post.url | prepend: site.baseurl }}">
 		          <!-- Image -->
