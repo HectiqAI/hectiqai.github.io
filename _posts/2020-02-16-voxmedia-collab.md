@@ -76,7 +76,7 @@ hide: false
         </p>
 
         <p>
-        	Two weeks ago Google announced their intentions to completely phase out third-party cookies in Chrome within two years. This announcement puts the final nail in the coffin for third-party cookies. Marketers and Brands now need to find other ways to make their marketing as effective while respecting the new privacy rules. <span class="text-primary">Companies that still don't have any plan about this right now will be left behind. </span>
+        	Two weeks ago Google announced their intentions to completely phase out third-party cookies in Chrome within two years. This announcement puts the final nail in the coffin for third-party cookies. Marketers and Brands now need to find other ways to make their marketing as effective while respecting the new privacy rules. <span class="text-info">Companies that still don't have any plan about this right now will be left behind. </span>
         </p>
         <h2 class="font-weight-bold mt-8">
 				  Learning to know your audience using first-party contextual data only
@@ -91,7 +91,7 @@ hide: false
 				</p>
 				<blockquote class="blockquote mb-7 mt-7">
           <p class="h2 mb-0 text-center text-primary-desat">
-            “Would it be possible to leverage the latest AI methods to build a more privacy-friendly audience segmentation technology without relying on any third-party data?”
+            “ Would it be possible to leverage the latest AI methods to build a more privacy-friendly audience segmentation technology without relying on any third-party data? ”
           </p>
         </blockquote>
 				<p>
@@ -112,11 +112,11 @@ hide: false
         </p>
         <blockquote class="blockquote mb-7 mt-7">
           <p class="h2 mb-0 text-center text-primary-desat">
-            “As a content provider, the beauty of this approach is that the deep learning models are powered by your own content. ”
+            “ As a content provider, the beauty of this approach is that the deep learning models are powered by your own content. ”
           </p>
         </blockquote>
 				<p>
-					We can illustrate this task using a classic example. You have a restaurant and a new client comes in. You have essentially two ways to know more about him. You can track him everywhere and note every restaurants he visited in the last months. This would be quite creepy and equivalent of using a third-party cookie. Or you can use the first-party data approach and keep track of what he ordered and liked the last time he visited your own restaurant. If you have a deep understanding of all the meals served in your restaurant, you can do a pretty good job of predicting his interests. You can even add up other variables like the day and hour of the week the client was here to polish it. 
+					We can illustrate this task using a classic example. You have a restaurant and a new client comes in. You have essentially two ways to know more about him. You can track him everywhere and note every restaurant he visited in the last months. This would be quite creepy and equivalent of using a third-party cookie. Or you can use the first-party data approach and keep track of what he ordered and liked the last time he visited your own restaurant. If you have a deep understanding of all the meals served in your restaurant, you can do a pretty good job of predicting his interests. You can even add up other variables like the day and hour of the week the client was here to polish it. 
 				</p>
         <p>
           As a content provider, the beauty of this approach is that the deep learning models are powered by your own content. As the amount of content increases in volume and diversity, the more refined your knowledge of your audience will be.
@@ -215,7 +215,7 @@ hide: false
         </ul>
     
         <p>
-        	At the end, those contextual predictions are much more effective for the brand and more privacy-friendly than third-party cookies ever were. And all this is happening many hundreds of times per sec; everytime a user is interacting with a piece of content on VoxMedia Network!
+        	At the end, those contextual predictions are much more effective for the brand and more privacy-friendly than third-party cookies ever were. And all this is happening many hundreds of times per sec; every time a user is interacting with a piece of content on VoxMedia Network!
         </p>
         <blockquote class="blockquote mb-7 mt-7">
           <p class="h2 mb-0 text-center text-primary-desat">
