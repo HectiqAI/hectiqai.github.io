@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 function NavBar(props){
   return (<nav class={`navbar navbar-expand-lg ${(props.dark)? "navbar-dark": "navbar-light" }`}>
             <div class={(props.boxes)? "container": "container-fuild"}>
-              <a class="navbar-brand" href="/">
+              <Link class="navbar-brand" to="/">
                 <img src="/assets/img/brand.png" class="navbar-brand-img" alt="..."/>
-              </a>
+              </Link>
 
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

@@ -1,10 +1,9 @@
 import React from 'react';
 
-import { Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import routes from "./routes.js";
 
 import * as Errors from "./pages/errors"
-import history from './history';
 
 
 class App extends React.Component {
@@ -16,7 +15,7 @@ class App extends React.Component {
 
     render() {
       
-      return (<Router history={history}>
+      return (<BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Switch>
                   {routes.map(({path,  isPrivate, strict, exact, isDemoShop, Component}={}, key)=> {
                     return (<Route exact={exact} strict={strict} path={path} render={(props) => {
@@ -24,7 +23,7 @@ class App extends React.Component {
                   })}
                   <Route component={Errors.Error404} />
                 </Switch>
-              </Router>
+              </BrowserRouter>
       );
     }
 }

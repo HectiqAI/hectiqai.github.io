@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 function MainCard(props){
@@ -16,7 +17,7 @@ function MainCard(props){
     }
   }
   return (<div class="col-12">
-            <a class={`card lift lift-lg shadow-light-lg mb-7 ${colors.bg}`} href={`/posts/${props.id}`}>
+            <Link class={`card lift lift-lg shadow-light-lg mb-7 ${colors.bg}`} to={`/posts/${props.id}`}>
               {(props.frontImgUrl)?
                 <img class="card-img-top mb-0 mt-0" src={ props.frontImgUrl } alt="..."/>
               : null} 
@@ -24,7 +25,7 @@ function MainCard(props){
                 <h6 class={`text-uppercase mb-1 ${colors.text}`}>{props.date}</h6>
                 <h4 class={`mb-0 mb-2 ${colors.title}`}>{ props.title }</h4>
               </div>
-            </a>
+            </Link>
           </div>);
 }
 

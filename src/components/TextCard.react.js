@@ -1,7 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 function truncate(str, length) {
     return str.length > length ? str.substring(0, length-3) + "..." : str;
+}
+
+function LinkCard(props){
+  return (<Link class={`card lift lift-lg shadow-light-lg mb-7 ${props.bg}`} to={props.to}>
+            {props.children}
+          </Link>)
+}
+function DivCard(props){
+  return (<div class={`card lift lift-lg shadow-light-lg mb-7 ${props.bg}`}>
+            {props.children}
+          </div>)
 }
 
 
@@ -20,13 +33,17 @@ function TextCard(props){
     }
   }
 
-  var Container = "div";
+  var Container = DivCard;
+  var containerProps = {bg:colors.bg}
   if (props.content){
-    Container = "a";
+    Container = LinkCard; 
+    containerProps = {bg:colors.bg, to:`/posts/${props.id}`}
+
   }
 
+
   return (<div class="col-12 col-sm-4 col-md-4 d-flex">
-            <Container class={`card lift lift-lg shadow-light-lg mb-7 ${colors.bg}`} href={`/posts/${props.id}`}>
+            <Container {...containerProps} >
               {(props.frontImgUrl)?
                 <img class="card-img-top mb-0 mt-0" src={ props.frontImgUrl } alt="..."/>
               : null} 
