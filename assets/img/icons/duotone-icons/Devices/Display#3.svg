@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
-    <title>Stockholm-icons / Devices / Display#3</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Stockholm-icons-/-Devices-/-Display#3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="bound" x="0" y="0" width="24" height="24"></rect>
-        <polygon id="Combined-Shape" fill="#335EEA" opacity="0.3" points="5 7 5 15 19 15 19 7"></polygon>
-        <path d="M11,19 L11,16 C11,15.4477153 11.4477153,15 12,15 C12.5522847,15 13,15.4477153 13,16 L13,19 L14.5,19 C14.7761424,19 15,19.2238576 15,19.5 C15,19.7761424 14.7761424,20 14.5,20 L9.5,20 C9.22385763,20 9,19.7761424 9,19.5 C9,19.2238576 9.22385763,19 9.5,19 L11,19 Z" id="Combined-Shape" fill="#335EEA" opacity="0.3"></path>
-        <path d="M5,7 L5,15 L19,15 L19,7 L5,7 Z M5.25,5 L18.75,5 C19.9926407,5 21,5.8954305 21,7 L21,15 C21,16.1045695 19.9926407,17 18.75,17 L5.25,17 C4.00735931,17 3,16.1045695 3,15 L3,7 C3,5.8954305 4.00735931,5 5.25,5 Z" id="Combined-Shape" fill="#335EEA"></path>
-    </g>
-</svg>
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path fill="#335EEA" opacity=".3" d="M5 7v8h14V7z"/><path d="M11 19v-3a1 1 0 012 0v3h1.5a.5.5 0 110 1h-5a.5.5 0 110-1H11z" fill="#335EEA" opacity=".3"/><path d="M5 7v8h14V7H5zm.25-2h13.5C19.993 5 21 5.895 21 7v8c0 1.105-1.007 2-2.25 2H5.25C4.007 17 3 16.105 3 15V7c0-1.105 1.007-2 2.25-2z" fill="#335EEA"/></g></svg>
