@@ -1,6 +1,6 @@
 {
-  "name": "hectiq-graph",
-  "homepage": "http://hectiqai.github.io/blog",
+  "name": "hectiq-blog",
+  "homepage": "https://blog.hectiq.ai",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
