@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+function truncate(str, length) {
+    return str.length > length ? str.substring(0, length-3) + "..." : str;
+}
+
 
 function MainCard(props){
   var colors = {
@@ -24,6 +28,7 @@ function MainCard(props){
               <div class="card-body my-auto">
                 <h6 class={`text-uppercase mb-1 ${colors.text}`}>{props.date}</h6>
                 <h4 class={`mb-0 mb-2 ${colors.title}`}>{ props.title }</h4>
+                <p class={`mb-0 ${colors.text}`}> { truncate(props.excerpt || props.summary, 100) }</p>
               </div>
             </Link>
           </div>);

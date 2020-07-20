@@ -2,8 +2,31 @@ import VoxMediaPost from "./VoxMediaPost.react"
 import DecadeOfSciencePost from "./DecadeOfSciencePost.react";
 import CatherineJoinsTeamPost from "./CatherineJoinsTeamPost.react";
 import EfficientNetPost from "./EfficientNetPost.react";
+import DAMPost from "./DAMPost.react";
+import iOSPost from "./iOSPost.react";
 
 const data = [
+  {
+    date: "August 5, 2020",
+    title: "Opportunities and challenge of machine learning on devices",
+    summary: "",
+    authors: ["Edward Laurence"],
+    by: "Edward Laurence, Data Scientist at Hectiq.AI",
+    content: iOSPost,
+    id: "iosPost",
+    hide: true,
+  },
+  {
+    date: "July 30, 2020",
+    title: "Helping a nonprofit organization in their fight against school dropout",
+    summary: "The Diplome avant la Médaille is a nonprofit organization that needs to pair hundred students and volunteers according to their availability and preferences. We provided a pairing program that solved their problem so that they can focus on helping students get their diploma.",
+    authors: ["Edward Laurence"],
+    by: "Edward Laurence, Data Scientist at Hectiq.AI",
+    content: DAMPost,
+    id: "dampost",
+    moreInfo: "Check and support DAM's program <a href='https://diplomeavantlamedaille.org'>here</a>.",
+    hide: true,
+  },
   {
     date: "June 10, 2020",
     title: "EfficientNet1D: A beast among the miniatures",

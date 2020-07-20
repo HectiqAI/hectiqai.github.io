@@ -50,7 +50,7 @@ function TextCard(props){
               <div class="card-body my-auto">
                 <h6 class={`text-uppercase mb-1 ${colors.text}`}>{props.date}</h6>
                 <h4 class={`mb-0 mb-2 ${colors.title}`}>{ props.title }</h4>
-                <p class={`mb-0 ${colors.text}`}> { truncate(props.excerpt, 100) }</p>
+                <p class={`mb-0 ${colors.text}`}> { truncate(props.excerpt || props.summary , 100) }</p>
               </div>
             </Container>
           </div>);

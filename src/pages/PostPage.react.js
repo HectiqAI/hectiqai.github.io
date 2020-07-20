@@ -14,8 +14,7 @@ class PostPage extends React.Component {
     this.data  = data.find(o=>o.id === this.postId)
   }
   render() {
-    console.log(this.postId, this.data)
-    if ((this.data==null)||(this.data.content==null)||(this.data.hide)){
+    if ((this.data==null)||(this.data.content==null)){
       return (<Redirect to="/404"/>)
     }
     return (<div>
