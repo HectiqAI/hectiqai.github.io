@@ -20,14 +20,14 @@ function RowPost(props){
   }
 
 
-  return (<div class="list-group-item d-flex align-items-center">
-          <div class="mr-auto">
-             <h6 class="text-uppercase mb-1 text-muted">{ props.header }</h6>
-              <Container href={`/posts/${props.id}`}><h4 class="mb-0">{ props.title }</h4></Container>
-              <p class={`mb-0 ${colors.text}`}> { truncate(props.excerpt, 120) }</p>
+  return (<div className="list-group-item d-flex align-items-center">
+          <div className="mr-auto">
+             <h6 className="text-uppercase mb-1 text-muted">{ props.header }</h6>
+              <Container href={`./posts/${props.id}`}><h4 className="mb-0">{ props.title }</h4></Container>
+              <p className={`mb-0 ${colors.text}`}> { truncate(props.excerpt, 120) }</p>
           </div>
-          <div class="badge text-wrap ml-10 text-right">
-            <p class="text-uppercase text-muted">{ props.date }</p>
+          <div className="badge text-wrap ml-10 text-right">
+            <p className="text-uppercase text-muted">{ props.date }</p>
           </div>
         </div>);
 }

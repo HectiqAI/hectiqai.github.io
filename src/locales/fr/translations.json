@@ -1,0 +1,133 @@
+{
+  "metadata": {
+    "description": "Partenaire de solutions d’intelligence artificielle."
+  },
+  "jobs": {
+     "maintitle": "Emplois",
+    "title": "Postes affichés",
+    "no-job": "Désolé, il n'y a aucun poste affiché.",
+    "still-cool": "Nous sommes toujours intéressés par des candidatures spontannées. Engagez la conversation sur Linkedin!"
+  },
+  "contact": {
+    "title": "Planifier un appel",
+    "subtitle": "Découvrez comment Hectiq AI peut vous permettre d'atteindre vos objectifs.",
+    "email": "Adresse courriel",
+    "firstname": "Prénom",
+    "lastname": "Nom",
+    "submit": "Contactez-moi",
+    "error": "Oups! Quelque chose est survenu qui a empêché d'envoyer le mot. Pouvez-vous essayer à nouveau?",
+    "error-twice": "Désolé! Il semble y avoir une erreur avec notre facteur. Nous aimerions vraiment vous entendre. S'il vous plaît, envoyez-nous un courriel à info@hectiq.ai.",
+    "success": "Merci! Nous vous contacterons le plus tôt possible."
+  },
+  "hero": {
+    "welcome": "Batîr des produits de AI et d'analyse de données",
+    "subtitle": "Nous offrons un service de recherche, de design et de programmation de technologies basées sur le AI et les données pour atteindre les objectifs de nos clients"
+  },
+  "footer": {
+    "slogan": "Batîr des produits de AI et d'analyse de données",
+    "copyright": "© 2020 Tous droits réservés.",
+    "proud-partner": "Hectiq.AI est un fier partenaire de ",
+    "careers": "Emplois",
+    "more": "Plus"
+  },
+  "about-us": {
+    "title": "À propos",
+    "office-title": "Fièrement fait à Québec"
+  },
+  "platforms": {
+    "maintitle": "Nos plateformes",
+    "title": "Nos plateformes",
+    "subtitle": "Au cours des années, nous avons identifié les problèmes en AI les plus courants et avons développé des plateformes pour en venir à bout",
+    "hgraph-title": "Hectiq graph",
+    "hgraph-description": "Une plateforme dédiée au e-commerce",
+    "hectiq-ml-title": "Hectiq deploy",
+    "hectiq-ml-description": "Déployer et servir simplement des modèles d'apprentissage automatique"
+  },
+   "hgraph": {
+    "title": "Hectiq Graph",
+    "subtitle": "Une plateforme dédiée au e-commerce",
+    "description": "Hectiq Graph offre des solutions d'apprentissage machine pour les plateformes d'e-commerce. Il analyse les caractéristiques (images, textes, etc.) de vos produits et du comportement des clients afin de produire des résultats personnalisés.",
+    "item2": "Recherches et recommandations personnalisées",
+    "item1": "Segmentation des utilisateurs",
+    "item3": "Intégrations avec la plupart des plateformes",
+    "item4": "Basé sur des technologies de pointe",
+    "info-title": "Intéressé par Hectiq Graph?",
+    "info-subtitle": "Laissez-nous votre courriel et nous prendrons contact très bientôt.",
+    "request": "En apprendre plus"
+  },
+  "hectiq-deploy": {
+    "title": "Hectiq Deploy",
+    "subtitle": "Déployer et servir simplement des modèles d'apprentissage automatique",
+    "description": "Hectiq Deploy est un outil exclusif pour déployer et servir des modèles de ML dans le cloud. Il permet de gérer les versions des modèles, lancer des entraînements et faire des inférences.",
+    "item2": "API direct avec vos modèles",
+    "item3": "Entraînements et inférences cédulés ou sur le pouce",
+    "item1": "S'intègre facilement à vos bases de données",
+    "item4": "Changer simplement les versions des modèles",
+    "info-title": "Intéressé par Hectiq Deploy?",
+    "info-subtitle": "Laissez-nous votre courriel et nous prendrons contact très bientôt.",
+    "request": "En apprendre plus"
+  },
+  "what-we-do": {
+    "title": "Nos services",
+    "subtitle": "Nous avons plusieurs années d'expérience dans toute la chaîne de production de développement et déployement de modèles d'apprentissage automatique en industrie.",
+    "ml-title": "Apprentissage automatique & AI",
+    "ml-description": "Designer, valider et implémenter des modèles adaptés à vos besoins et selon les plus récentes techniques.",
+    "data-title": "Science des données",
+    "data-description": "Développer des modèles statistiques et prédictifs en utilisant des approches établies et robustes.",
+    "engi-title": "Ingénérie des données",
+    "engi-description": "Mise en place d'un backend efficace et évolutif, de bases de données et de pipelines pour l'analyse et la récolte des données.",
+    "frontend-title": "Frontend",
+    "frontend-description": "Créer et designer des solutions webs ou mobiles pour visualiser vos modèles et vos données."
+  },
+  "process": {
+    "title": "Un processus mis à l'épreuve",
+    "description": "Nous travaillons de près avec nos clients afin de les assister et s'assurer que la technologie AI est fonctionnelle et maintenue à jour. Nous ne nous limitons pas à donner du code, nous aidons les compagnies à faire la transition AI pour évoluer et se prendre de l'expansion.",
+    "description2": "Le déployment et l'intégration est souvent la cause de l'échec des projets de AI? Chez Hectiq AI, nous prenons cet aspect très au sérieux et nous nous assurons que le projet se rend en production.",
+    "research-title": "Rechercher et développer",
+    "research-description": "Explorer pour choisir la meilleure solution",
+    "stats-title": "Valider l'approche",
+    "stats-description": "Rendre la solution robuste et évaluer ses caractéristiques",
+    "software-title": "Implémenter la solution",
+    "software-description": "Faire fonctionner la solution et optimiser ses moindres aspects",
+    "integration-title": "Intégrer & déployer",
+    "integration-description": "Amener la solution en production"
+  },
+  "products": {
+    "maintitle": "Nos plateformes",
+    "title": "Des solutions robustes à plusieurs problèmes",
+    "subtitle": "Au cours des années, nous avons identifié les problèmes les plus communs de la mise en production de AI. Nous donnons maintenant accès à cette expertise en offrant des outils qui facilitent la transition au AI."
+  },
+  "nav": {
+    "services": "Services",
+    "products": "Plateformes",
+    "about": "À propos",
+    "blog": "Blog"
+  },
+  "clients": {
+    "title": "Quelques-uns de nos clients et partenaires",
+    "subtitle": ""
+  },
+  "leadership": {
+    "title": "Notre équipe",
+    "martin-laprise": "Martin Laprise",
+    "martin-laprise-title": "Directeur scientifique & Président fondateur",
+    "martin-laprise-description": "Jusqu’en 2010, Martin participait à la recherche en optique non linéaire en tant que candidat au doctorat en physique à l’Université Laval. Après ses études supérieures, il a travaillé en tant que Data Scientist pour de nombreuses entreprises où il a dirigé les projets de  science des données et d’apprentissage machine. Martin compte plus de 10 ans d’expérience dans la mise en oeuvre de l’apprentissage machine et de la science des données afin de résoudre des problématiques retrouvées en entreprises.",
+    "martin-laprise-linkedin": "https://www.linkedin.com/in/martinlaprise/",
+    "martin-laprise-twitter": "https://twitter.com/mlaprise",
+    "edward-laurence": "Edward Laurence",
+    "edward-laurence-title": "Scientifique des données",
+    "edward-laurence-description": "Durant ses études en physique, Edward s'est développé une expertise en analyse de données, en particulier pour la détection de communautés, la réduction dimensionnelle, et l'inférence statistique. Suivant l'essor du AI, il s'est ensuite spécialisé en apprentissage machine sur graphes. Depuis son arrivée chez Hectiq.ai, il perfectionne son savoir-faire du AI en se voyant confier des problématiques concrètes et variées.",
+    "edward-laurence-linkedin": "https://www.linkedin.com/in/edward-laurence-92398b141/",
+    "edward-laurence-twitter": "",
+    "albert-dang-vu": "Albert Dang-Vu",
+    "albert-dang-vu-title": "Partenaire & Coprésident de Mirego",
+    "albert-dang-vu-description": "Chez Hectiq.AI, Albert est responsable de la stratégie d’affaires et des partenariats. Il est également coprésident et chef de la direction de Mirego, une entreprise qui aide ses clients à se réinventer et à prospérer à l’aide de produits numériques. Avant de fonder Mirego en 2007, il était le vice-président, technologies de Copernic, une entreprise inscrite à la bourse NASDAQ. Il est récipiendaire du Grand Prix de l’Entrepreneur Ernst & Young en 2015 pour le Québec dans la catégorie Technologie de l’information.",
+    "albert-dang-vu-linkedin": "https://www.linkedin.com/in/albertdv/",
+    "albert-dang-vu-twitter": "",
+    "denis-laprise": "Denis Laprise",
+    "denis-laprise-title": "Conseiller & CTO de Rakuten Ready",
+    "denis-laprise-description": "Denis est un entrepreneur fasciné par la frontière séparant le monde physique et la technologie. Cofondateur de Poly9, une entreprise de conseil en cartographie qui a été vendue à Apple en 2010. Chez Apple, il a dirigé un groupe affairé à l’élaboration du rendu des cartes (map rendering). Denis a ensuite cofondé Curbside, une entreprise qui a conçu une plateforme permettant l’offre de commerce local en ligne, acquise par Rakuten en 2018 et où il occupe actuellement le poste de directeur technique.",
+    "denis-laprise-linkedin": "https://www.linkedin.com/in/dlaprise/",
+    "denis-laprise-twitter": "https://twitter.com/nside/"
+  }
+}

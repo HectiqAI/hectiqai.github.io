@@ -20,15 +20,15 @@ function MainCard(props){
       title: "text-light"
     }
   }
-  return (<div class="col-12">
-            <Link class={`card lift lift-lg shadow-light-lg mb-7 ${colors.bg}`} to={`/posts/${props.id}`}>
+  return (<div className="col-12">
+            <Link className={`card lift lift-lg shadow-light-lg mb-7 ${colors.bg}`} to={`posts/${props.id}`}>
               {(props.frontImgUrl)?
-                <img class="card-img-top mb-0 mt-0" src={ props.frontImgUrl } alt="..."/>
+                <img className="card-img-top mb-0 mt-0" src={ props.frontImgUrl } alt="..."/>
               : null} 
-              <div class="card-body my-auto">
-                <h6 class={`text-uppercase mb-1 ${colors.text}`}>{props.date}</h6>
-                <h4 class={`mb-0 mb-2 ${colors.title}`}>{ props.title }</h4>
-                <p class={`mb-0 ${colors.text}`}> { truncate(props.excerpt || props.summary, 100) }</p>
+              <div className="card-body my-auto">
+                <h6 className={`text-uppercase mb-1 ${colors.text}`}>{props.date}</h6>
+                <h3 className={`mb-0 mb-2 ${colors.title}`}>{ props.title }</h3>
+                <p className={`mb-0 ${colors.text}`}> { truncate(props.excerpt || props.summary, 100) }</p>
               </div>
             </Link>
           </div>);

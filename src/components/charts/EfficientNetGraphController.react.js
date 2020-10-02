@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from 'prop-types';
 
 import StepRangeSlider from 'react-step-range-slider'
 import EfficientNetGraph from "./EfficientNetGraph.react";

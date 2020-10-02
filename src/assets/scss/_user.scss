@@ -1,0 +1,88 @@
+// 
+// user.scss
+// Use this to write your custom SCSS
+//
+
+$official-blue: #354178;
+html, body {
+}
+h1, h2 {
+  font-family: 'EB Garamond';
+  font-weight: bold;
+}
+.display-1 {
+	font-family: 'EB Garamond' !important;
+}
+h3, h4, h5, p {
+  font-family: 'HKGroteskPro';
+}
+
+.bg-blue {
+  background-color: $official-blue;
+}
+
+.text-hectiqblue {
+  color:$official-blue;
+}
+
+strong {
+	font-weight: 800 !important;
+}
+.bg-grad {
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0)) !important;
+  padding-bottom: 20px;
+}
+
+
+.btn-primary {
+	background-color: $official-blue;
+	&:hover {
+		background-color: $official-blue;
+		opacity: 0.8;
+		transition: all 0.3s;
+	}
+}
+.nav-link  {
+	:not(.circle) {
+		  &:hover {
+			opacity: 0.5;
+			transition: all 0.3;
+		}
+	}
+	
+	span {
+		&.circle {
+			border-radius: 50%;
+			padding: 0.4em;
+			border: 1.7px white solid;
+			&:hover {
+				background-color: white;
+				color: $official-blue;
+				transition: all 0.3s;
+			}
+			&.dark {
+				border: 1.7px $official-blue solid ;
+				&:hover {
+					background-color: $official-blue;
+					color: white;
+					transition: all 0.3s;
+				}
+			}
+			
+		}
+
+	}
+}
+a {
+	&.nohover-link {
+		&:hover {
+			color: inherit !important;
+		}
+	}
+}
+.proud-quote {
+	a {
+		color: white !important;
+		font-weight: 600 !important;
+	}
+}

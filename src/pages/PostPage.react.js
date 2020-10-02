@@ -1,91 +1,108 @@
 import * as React from "react";
-import { Redirect } from "react-router-dom";
-
+import {withRouter,  Redirect } from "react-router-dom";
+import i18n from 'i18next';
 
 import data from "../posts/posts.react";
-import metaTags from "../posts/metatags.react";
-
-import {NavBar, Footer, Meta} from "../components";
+import Page from "../components/page";
+import SubHero from "../components/subhero";
+import { Footer} from "../components";
+import { ConcaveCurve, RightCircle  } from "../components/curves";
 
 class PostPage extends React.Component {
   constructor(props){
     super(props)
     this.postId = this.props.match.params.postid
     this.data  = data.find(o=>o.id === this.postId)
+    i18n.changeLanguage(props.match.params.lang)
+    window.scrollTo(0,0)
   }
   render() {
     if ((this.data==null)||(this.data.content==null)){
       return (<Redirect to="/404"/>)
     }
-    return (<div>
-              <Meta title={this.data.title} {...metaTags[this.data.id]}/>
+    
 
-              <NavBar boxes/>
+    const metadata = {
+      title: this.data.title,
+      twitter:  process.env.REACT_APP_TWITTER,
+      description: this.data.summary,
+      siteURL: process.env.REACT_APP_MAIN_URL
+    }
+    return (<Page withGrad={this.data.frontWideImg} dark={this.data.lightHeader} metadata={metadata} location={this.props.location}>  
+              <div className={`bg-gray-200 overflow-hidden position-relative ${this.data.lightHeader? "text-light ": ""}`}>
+                {this.data.frontWideImg?
+                  <section style={{backgroundImage: `url(${this.data.frontWideImg})`, backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat"}} className="py-15"  >
+                  </section> 
+                  :<section >
+                    <SubHero/>   
+                    <RightCircle/> 
+                  </section> }
+              </div>
+              <ConcaveCurve color="text-white"/>
 
-              {(this.data.frontWideImg)? 
-                <section data-jarallax data-speed=".8" class="py-12 py-md-15 py-sm-0 bg-cover jarallax" style={{backgroundImage: `url(${this.data.frontWideImg})`}}></section>
-                : null}
-
+            <div className="text-dark">
               {/*Content*/}
-              <section class="pt-8 pt-md-11 pb-0">
-                <div class="container">
-                  <div class="row justify-content-center">
-                    <div class="col-12 col-md-12 col-lg-10 col-xl-9">
-                      <h6 class="text-uppercase mb-1 text-muted">{this.data.date}</h6>
-                      <h1 class="display-4 font-weight-bold">
+              <section className="pt-8 pt-md-11 pb-0">
+                <div className="container">
+                  <div className="row justify-content-center">
+                    <div className="col-12 col-md-12 col-lg-10 col-xl-9">
+                      <h6 className="text-uppercase mb-1 text-muted">{this.data.date}</h6>
+                      <h1 className="display-4 font-weight-bold">
                         { this.data.title }
                       </h1>
-                      {(this.data.by)? <p class="text-secondary  ">By {this.data.by}</p> : null}
-                      <p class="lead mb-7 text-muted" dangerouslySetInnerHTML={{__html: this.data.summary}}>
+                      {(this.data.by)? <p className="text-secondary  ">By {this.data.by}</p> : null}
+                      <p className="lead mb-7 text-muted" dangerouslySetInnerHTML={{__html: this.data.summary}}>
                       </p>
-                      <hr class="hr-md mb-7"/>
+                      <hr className="hr-md mb-7"/>
                     </div>
                   </div>
                 </div>
               </section>
-              {this.data.content()}
+              <section className="font-size-lg">
+                {this.data.content()}
+              </section>
 
               {/*Post footer*/}
-              <section class="pt-2 pt-md-11 pb-8">
-                <div class="container ">
-                  {((this.data.authors!=null)||(this.data.credits!=null)||(this.data.moreInfo!=null))? <hr class="border-gray-300"/> : null}
-                  <div class="list-group list-group-flush border-0 mb-1 mr-lg-12 ml-md-4 ">
+              <section className="pt-2 pt-md-11 pb-8">
+                <div className="container ">
+                  {((this.data.authors!=null)||(this.data.credits!=null)||(this.data.moreInfo!=null))? <hr className="border-gray-300"/> : null}
+                  <div className="list-group list-group-flush border-0 mb-1 mr-lg-12 ml-md-4 ">
                     {(this.data.authors)? 
-                      <div class="row">
-                        <div class="col-sm-4 col-md-4 col-lg-2">
-                          <p class="text-muted">
+                      <div className="row">
+                        <div className="col-sm-4 col-md-4 col-lg-2">
+                          <p className="text-muted">
                             {(this.data.authors.length>1)? "Authors": "Author"}
                           </p>
                         </div>
-                        <div class="col-sm-8 col-md-8 col-lg-10">
-                          <p class="font-size-sm text-muted ">
+                        <div className="col-sm-8 col-md-8 col-lg-10">
+                          <p className="font-size-sm text-muted ">
                             {this.data.authors.join(', ')}
                           </p>
                         </div>
                       </div>: null}
 
                       {(this.data.credits)? 
-                        <div class="row border-top pt-4 pb-4">
-                          <div class="col-sm-4 col-md-4 col-lg-2">
-                            <p class="text-muted ">
+                        <div className="row border-top pt-4 pb-4">
+                          <div className="col-sm-4 col-md-4 col-lg-2">
+                            <p className="text-muted ">
                               Credits
                             </p>
                           </div>
-                          <div class="col-sm-8 col-md-8 col-lg-10">
-                            <p class="font-size-sm text-muted mb-0" dangerouslySetInnerHTML={{__html: this.data.credits}}>
+                          <div className="col-sm-8 col-md-8 col-lg-10">
+                            <p className="font-size-sm text-muted mb-0" dangerouslySetInnerHTML={{__html: this.data.credits}}>
                             </p>
                           </div>
                         </div>: null}
 
                       {(this.data.moreInfo)? 
-                        <div class="row border-top pt-4 pb-4">
-                          <div class="col-sm-4 col-md-4 col-lg-2">
-                            <p class="text-muted ">
+                        <div className="row border-top pt-4 pb-4">
+                          <div className="col-sm-4 col-md-4 col-lg-2">
+                            <p className="text-muted ">
                               Learn more
                             </p>
                           </div>
-                          <div class="col-sm-8 col-md-8 col-lg-10">
-                            <p class="font-size-sm text-muted mb-0" dangerouslySetInnerHTML={{__html: this.data.moreInfo}}>
+                          <div className="col-sm-8 col-md-8 col-lg-10">
+                            <p className="font-size-sm text-muted mb-0" dangerouslySetInnerHTML={{__html: this.data.moreInfo}}>
                             </p>
                           </div>
                         </div>: null}
@@ -95,8 +112,9 @@ class PostPage extends React.Component {
 
               <Footer/>
 
-            </div>)
+            </div>
+            </Page>)
   }
 }
 
-export default PostPage;
+export default withRouter(PostPage);

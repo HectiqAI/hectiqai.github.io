@@ -1,0 +1,136 @@
+{
+  "metadata": {
+    "description": "Artificial intelligence solutions provider."
+  },
+  "jobs": {
+    "maintitle": "Careers",
+    "title": "Available jobs",
+    "no-job": "There is no opening at the moment. ",
+    "still-cool": "But...we're always interested by spontaneous applications. Start the conversation on Linkedin!"
+  },
+  "contact": {
+    "title": "Schedule a call with us",
+    "subtitle": "Find out how Hectiq AI can help you with your projects.",
+    "email": "Email address",
+    "firstname": "First name",
+    "lastname": "Last name",
+    "submit": "Get in touch",
+    "error": "Oops! Something went wrong. Verify your infos and try again. ",
+    "error-twice": "Sorry! Something is wrong with our mail provider. We still want to hear from you, please send us an email at info@hectiq.ai.",
+    "success": "Thanks! We will reach you back as soon as possible."
+  },
+  "hero": {
+    "welcome": "Crafting AI-based & data-driven products",
+    "subtitle": "Weresearch, design & build AI technologies to help our clients solve real-world problems using data"
+  },
+  "footer": {
+    "slogan": "Crafting AI-based & data-driven products",
+    "copyright": "© 2020 All rights reserved.",
+    "proud-partner": "Hectiq.AI is a proud partner of ",
+    "careers": "Careers",
+    "more": "More"
+  },
+  "about-us": {
+    "title": "About us",
+    "office-title": "Made in Quebec city"
+  },
+  "products": {
+    "maintitle": "Our platforms",
+    "title": "Robust solutions to common problems",
+    "subtitle": "Over the course of the years, we have identified and solved the most common problems in developing and deploying machine learning. We now offer these exclusive tools to our clients.",
+    "hgraph-title": "Hectiq graph",
+    "hgraph-description": "An awsome product",
+    "hectiq-ml-title": "Hectiq deploy",
+    "hectiq-ml-description": "An awsome product 2"
+  },
+  "platforms": {
+    "title": "Our platforms",
+    "subtitle": "Over the course of the years, we have developed solutions that fits many problems.",
+    "hgraph-title": "Hectiq Graph",
+    "hgraph-description": "A cloud solution designed for e-commerce",
+    "hectiq-ml-title": "Hectiq Deploy",
+    "hectiq-ml-description": "Frictionless deployments and serving of machine learning models"
+  },
+  "hgraph": {
+    "title": "Hectiq Graph",
+    "subtitle": "A cloud platform designed for e-commerce",
+    "description": "Hectiq Graph offers graph-based solutions to e-commerce platforms. It analyzes your products visual and contextual information, and users behaviors in order to perform personalized requests.",
+    "item2": "Personalized search and recommendation",
+    "item1": "Automatic users segmentation",
+    "item3": "E-commerce integrations",
+    "item4": "State-of-the-art graph analysis",
+    "info-title": "Interested by Hectiq Graph?",
+    "info-subtitle": "Leave us your email and we will be in touch shortly.",
+    "request": "Learn more"
+  },
+  "hectiq-deploy": {
+    "title": "Hectiq Deploy",
+    "subtitle": "Frictionless deployments and serving of machine learning models",
+    "description": "Hectiq Deploy is an exclusive tool to deploy and serve models in the cloud. It lets you manage the model versions, the training, and the inference tasks.",
+    "item2": "Direct API with your models",
+    "item3": "Periodic and overnight trainings and inferences",
+    "item1": "Integrates with your database",
+    "item4": "Support model versionning",
+    "info-title": "Interested by Hectiq Deploy?",
+    "info-subtitle": "Leave us your email and we will be in touch shortly.",
+    "request": "Learn more"
+  },
+  "what-we-do": {
+    "title": "What we do",
+    "subtitle": "We have many years of experience building & deploying machine learning models & data infrastructures in the real world.",
+    "ml-title": "Machine Learning & AI",
+    "ml-description": "Designing, validating, and implementing custom-fit deep learning models using state-of-the-art methods.",
+    "data-title": "Data science",
+    "data-description": "Developing statistical & predictive models using robust and well-established methods.",
+    "engi-title": "Data engineering",
+    "engi-description": "Setting up an efficient and scalable analytics backend, data processing pipelines and data warehouses.",
+    "frontend-title": "Frontend software",
+    "frontend-description": "Building and designing frontend softwares & analytics dashboards for AI-based and data driven products."
+  },
+  "process": {
+    "title": "An end-to-end process",
+    "description": "We work closely with our clients & assist them to make sure they can use & maintain AI tech in the future. We don’t only ship code, we help companies make the AI transition in order to evolve and grow, in the near and distant future.",
+    "description2" : "Did you know that the most common source of AI project failure happens at the deployment or integration? At Hectiq AI, we believe in shipping a fully working solution.",
+    "research-title": "Research & Development",
+    "research-description": "Explore to find the best solution",
+    "stats-title": "Statistical validation",
+    "stats-description": "Make it robust and optimized",
+    "software-title": "Software implementation",
+    "software-description": "Make it work",
+    "integration-title": "Integration & Deployment",
+    "integration-description": "Bring it into production"
+  },
+  "nav": {
+    "services": "Services",
+    "products": "Platforms",
+    "about": "About us",
+    "blog": "Blog"
+  },
+  "clients": {
+    "title": "Some of our clients and partners",
+    "subtitle": ""
+  },
+  "leadership": {
+    "title": "Our Team",
+    "martin-laprise": "Martin Laprise",
+    "martin-laprise-title": "Chief Scientist & Founder",
+    "martin-laprise-description": "Until 2010, Martin was doing research in nonlinear optics as a PhD Candidate in Physics at Université Laval. After his graduate study, he worked as a Data Scientist for multiple companies where he led the data science and machine learning effort. Martin has over 10 years of experience at applying machine learning & data science to real world problem in companies.",
+    "martin-laprise-linkedin": "https://www.linkedin.com/in/martinlaprise/",
+    "martin-laprise-twitter": "https://twitter.com/mlaprise",
+    "edward-laurence": "Edward Laurence",
+    "edward-laurence-title": "AI Research Scientist",
+    "edward-laurence-description": "During his PhD in physics, Edward has developed a strong expertise in structured data, especially in community detection and dimension reduction. Following the rise of deep learning, he became proficient in machine learning for tasks such as graphs data analysis, image and time series classification. He then polished his knowledge by landing at Hectiq.ai where he solves concrete problems by using newly developed methods or applying state of the art approaches.",
+    "edward-laurence-linkedin": "https://www.linkedin.com/in/edward-laurence-92398b141/",
+    "edward-laurence-twitter": "",
+    "albert-dang-vu": "Albert Dang-Vu",
+    "albert-dang-vu-title": "Partner & Mirego's Co-President",
+    "albert-dang-vu-description": "At Hectiq.AI, Albert manages business strategy and partnerships. Albert is also Co-President and CEO of Mirego, a service company that builds high-end digital products and solutions for businesses. Before founding Mirego in 2007, he was the Vice President of Copernic Technologies, a technology company listed on the NASDAQ stock exchange. In 2015, Albert received the Ernst & Young’s provincial Information Technology Entrepreneur of the Year award.",
+    "albert-dang-vu-linkedin": "https://www.linkedin.com/in/albertdv/",
+    "albert-dang-vu-twitter": "",
+    "denis-laprise": "Denis Laprise",
+    "denis-laprise-title": "Advisor & Rakuten Ready's CTO",
+    "denis-laprise-description": "Denis is an entrepreneur fascinated by the boundaries between the physical world and technology. He co-founded Poly9, a mapping consultancy, and sold it to Apple in 2010. At Apple he led a group working on map rendering. Denis then co-founded Curbside, a company building a platform to enable online local commerce, which got acquired by Rakuten in 2018 and where he’s currently serving as CTO.",
+    "denis-laprise-linkedin": "https://www.linkedin.com/in/dlaprise/",
+    "denis-laprise-twitter": "https://twitter.com/nside/"
+  }
+}

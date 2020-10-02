@@ -18,7 +18,7 @@ class App extends React.Component {
       return (<BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Switch>
                   {routes.map(({path,  isPrivate, strict, exact, isDemoShop, Component}={}, key)=> {
-                    return (<Route exact={exact} strict={strict} path={path} render={(props) => {
+                    return (<Route key={key} exact={exact} strict={strict} path={path} render={(props) => {
                                     return ( <Component {...props} />)}} />)
                   })}
                   <Route component={Errors.Error404} />

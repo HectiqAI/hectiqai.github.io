@@ -46,9 +46,9 @@ class EfficientNetGraph extends React.Component {
 
         const resolutionScale = (this.props.resolution+4)/10;
 
-        let nodes = [{width: (i==0)? 8: 8+i*1.2*this.state.width,
+        let nodes = [{width: (i===0)? 8: 8+i*1.2*this.state.width,
                       x: `${i*100/(this.state.depth+2)}%`,
-                      height: (i==0)? (this.props.height*resolutionScale): this.props.height*resolutionScale-i*this.props.height*resolutionScale/(this.state.depth+2)}]
+                      height: (i===0)? (this.props.height*resolutionScale): this.props.height*resolutionScale-i*this.props.height*resolutionScale/(this.state.depth+2)}]
 
 
         svgCanvas.select(`#d3-link-g${i}`)
@@ -68,7 +68,7 @@ class EfficientNetGraph extends React.Component {
         .style('fill', '#aaa')
         .attr('stroke', '#aaa');
 
-        const link = svgCanvas.select(`#d3-link-g${i}`)
+        svgCanvas.select(`#d3-link-g${i}`)
         .selectAll("line")
         .data(nodes)
         .join("line")
@@ -80,7 +80,7 @@ class EfficientNetGraph extends React.Component {
           .attr("y2", this.props.height/2);
 
 
-        const node = svgCanvas.select(`#d3-g${i}`)
+        svgCanvas.select(`#d3-g${i}`)
         .selectAll("rect")
         .data(nodes)
         .join("rect")
