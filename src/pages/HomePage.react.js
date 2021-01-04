@@ -9,7 +9,11 @@ import Page from "../components/page";
 import SubHero from "../components/subhero";
 import {ConcaveCurve, RightCircle, CircleLg  } from "../components/curves";
 
-
+const getLanguage = () => {
+  return i18n.language ||
+    (typeof window !== 'undefined' && window.localStorage.i18nextLng) ||
+    'en';
+};
 
 function HomePage(props){
 
@@ -30,7 +34,7 @@ function HomePage(props){
   return (<Page metadata={metadata} location={props.location}>  
             <div className="bg-gray-200 overflow-hidden text-dark position-relative">
             <section>
-              <SubHero title={"Blog"} subtitle={props.match.params.lang==="en"? "": "Les articles sont rédigés en anglais."}/>   
+              <SubHero title={"Blog"}/>   
               <RightCircle/> 
               <CircleLg lg speed={10} startOpacity={0.2} endOpacity={0.01} radius={50} cx={250} cy={100} grad={{x1: "0", y1: "100", x2:"300", y2: "200"}}/>  
               <CircleLg lg speed={-60} startOpacity={0.4} endOpacity={0.01} radius={30} cx={120} cy={250} grad={{x1: "120", y1: "100", x2:"200", y2: "200"}}/>  
@@ -47,17 +51,26 @@ function HomePage(props){
             <section className="py-8 py-md-10 mt-n12">
               <div className="container">
                 <div className="row" >
-                  {(result.slice(0,1).map(({date, title, excerpt, ...props}, key)=>{
-                    return (<MainCard key={key} date={date} title={title} excerpt={excerpt} {...props} />)
+                  {(result.slice(0,1).map(({date, dateFR, title, titleFR, summaryFR, excerpt, excerptFR, ...props}, key)=>{
+
+                    return (<MainCard key={key} 
+                                date={getLanguage()==="fr"? dateFR|| date: date} 
+                                title={getLanguage()==="fr"? titleFR||title: title} 
+                                excerpt={getLanguage()==="fr"? excerptFR|| summaryFR || excerpt: excerpt} {...props} />)
                   }))}
-                  {(result.slice(1,4).map(({date, title, excerpt, ...props}, key)=>{
-                    return (<TextCard key={key} date={date} title={title} excerpt={excerpt} {...props} />)
+                  {(result.slice(1,4).map(({date, dateFR, title, titleFR, summaryFR, excerpt, excerptFR, ...props}, key)=>{
+                    return (<TextCard key={key} 
+                      date={getLanguage()==="fr"? dateFR|| date: date} 
+                      title={getLanguage()==="fr"? titleFR||title: title} 
+                      excerpt={getLanguage()==="fr"? excerptFR || summaryFR || excerpt: excerpt} {...props} />)
                   }))}
                 </div>
 
                 <div className="list-group list-group-flush mt-6">  
-                  {(result.slice(4).map(({date, title, excerpt, ...props}, key)=>{
-                    return (<RowPost key={key} date={date} title={title} excerpt={excerpt} {...props} />)
+                  {(result.slice(4).map(({date, dateFR, title, titleFR, summaryFR, excerpt, excerptFR, ...props}, key)=>{
+                    return (<RowPost key={key} date={getLanguage()==="fr"? dateFR|| date: date} 
+                      title={getLanguage()==="fr"? titleFR||title: title}                            
+                        excerpt={getLanguage()==="fr"? excerptFR || summaryFR || excerpt: excerpt} {...props} />)
                   }))}
                 </div>
 

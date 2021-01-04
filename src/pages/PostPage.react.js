@@ -8,6 +8,14 @@ import SubHero from "../components/subhero";
 import { Footer} from "../components";
 import { ConcaveCurve, RightCircle  } from "../components/curves";
 
+
+const getLanguage = () => {
+  return i18n.language ||
+    (typeof window !== 'undefined' && window.localStorage.i18nextLng) ||
+    'en';
+};
+
+
 class PostPage extends React.Component {
   constructor(props){
     super(props)
@@ -21,12 +29,37 @@ class PostPage extends React.Component {
       return (<Redirect to="/404"/>)
     }
     
-
     const metadata = {
       title: this.data.title,
       twitter:  process.env.REACT_APP_TWITTER,
       description: this.data.summary,
       siteURL: process.env.REACT_APP_MAIN_URL
+    }
+
+    var content = {}
+    if (getLanguage()==="fr"){
+      content = {
+        content: this.data.contentFR || this.data.content,
+        title: this.data.titleFR || this.data.title,
+        date: this.data.dateFR || this.data.date,
+        authors: this.data.authorsFR || this.data.authors,
+        summary: this.data.summaryFR || this.data.summary,
+        credits: this.data.creditsFR || this.data.credits,
+        moreInfo: this.data.moreInfoFR || this.data.moreInfo,
+        note: this.data.noteFR || this.data.note,
+        by: this.data.byFR || this.data.by,
+        learnMoreWord: "En apprendre plus",
+        noteWord: "Note",
+        creditWord: "Crédits",
+        byWord: "Par ",
+        notTranslated: (this.data.contentFR? "": "Cet article est disponible seulement en anglais.")
+      }
+    }else {
+      content = {...this.data,
+       byWord: "By ", 
+      noteWord: "Note",
+       creditWord: "Credits",       
+       learnMoreWord: "Learn more"}
     }
     return (<Page withGrad={this.data.frontWideImg} dark={this.data.lightHeader} metadata={metadata} location={this.props.location}>  
               <div className={`bg-gray-200 overflow-hidden position-relative ${this.data.lightHeader? "text-light ": ""}`}>
@@ -46,63 +79,78 @@ class PostPage extends React.Component {
                 <div className="container">
                   <div className="row justify-content-center">
                     <div className="col-12 col-md-12 col-lg-10 col-xl-9">
-                      <h6 className="text-uppercase mb-1 text-muted">{this.data.date}</h6>
+                      <p className="text-primary"><b>{content.notTranslated}</b></p>
+
+                      <h6 className="text-uppercase mb-1 text-muted">{content.date}</h6>
                       <h1 className="display-4 font-weight-bold">
-                        { this.data.title }
+                        {content.title}
                       </h1>
-                      {(this.data.by)? <p className="text-secondary  ">By {this.data.by}</p> : null}
-                      <p className="lead mb-7 text-muted" dangerouslySetInnerHTML={{__html: this.data.summary}}>
+                      {(content.by)? <p className="text-secondary  ">{content.byWord} {content.by}</p> : null}
+                      <p className="lead mb-7 text-muted" dangerouslySetInnerHTML={{__html: content.summary}}>
                       </p>
                       <hr className="hr-md mb-7"/>
                     </div>
                   </div>
                 </div>
               </section>
+              {/*Content*/}
               <section className="font-size-lg">
-                {this.data.content()}
+               {content.content()}
               </section>
 
               {/*Post footer*/}
               <section className="pt-2 pt-md-11 pb-8">
                 <div className="container ">
-                  {((this.data.authors!=null)||(this.data.credits!=null)||(this.data.moreInfo!=null))? <hr className="border-gray-300"/> : null}
+                  {((content.authors!=null)||(content.credits!=null)||(content.moreInfo!=null))? <hr className="border-gray-300"/> : null}
                   <div className="list-group list-group-flush border-0 mb-1 mr-lg-12 ml-md-4 ">
-                    {(this.data.authors)? 
+                    {(content.authors)? 
                       <div className="row">
                         <div className="col-sm-4 col-md-4 col-lg-2">
                           <p className="text-muted">
-                            {(this.data.authors.length>1)? "Authors": "Author"}
+                          {this.props.match.params.lang==="en"? ((content.authors.length>1)? "Authors": "Author"): ((content.authors.length>1)? "Auteurs": "Auteur")}
                           </p>
                         </div>
                         <div className="col-sm-8 col-md-8 col-lg-10">
                           <p className="font-size-sm text-muted ">
-                            {this.data.authors.join(', ')}
+                            {content.authors.join(', ')}
                           </p>
                         </div>
                       </div>: null}
 
-                      {(this.data.credits)? 
+                      {(content.credits)? 
                         <div className="row border-top pt-4 pb-4">
                           <div className="col-sm-4 col-md-4 col-lg-2">
                             <p className="text-muted ">
-                              Credits
+                              {content.creditWord}
                             </p>
                           </div>
                           <div className="col-sm-8 col-md-8 col-lg-10">
-                            <p className="font-size-sm text-muted mb-0" dangerouslySetInnerHTML={{__html: this.data.credits}}>
+                            <p className="font-size-sm text-muted mb-0" dangerouslySetInnerHTML={{__html: content.credits}}>
                             </p>
                           </div>
                         </div>: null}
 
-                      {(this.data.moreInfo)? 
+                      {(content.moreInfo)? 
                         <div className="row border-top pt-4 pb-4">
                           <div className="col-sm-4 col-md-4 col-lg-2">
                             <p className="text-muted ">
-                              Learn more
+                              {content.learnMoreWord}
                             </p>
                           </div>
                           <div className="col-sm-8 col-md-8 col-lg-10">
-                            <p className="font-size-sm text-muted mb-0" dangerouslySetInnerHTML={{__html: this.data.moreInfo}}>
+                            <p className="font-size-sm text-muted mb-0" dangerouslySetInnerHTML={{__html: content.moreInfo}}>
+                            </p>
+                          </div>
+                        </div>: null}
+                      {(content.note)? 
+                        <div className="row border-top pt-4 pb-4">
+                          <div className="col-sm-4 col-md-4 col-lg-2">
+                            <p className="text-muted ">
+                              {content.noteWord}
+                            </p>
+                          </div>
+                          <div className="col-sm-8 col-md-8 col-lg-10">
+                            <p className="font-size-sm text-muted mb-0" dangerouslySetInnerHTML={{__html: content.note}}>
                             </p>
                           </div>
                         </div>: null}
@@ -117,4 +165,4 @@ class PostPage extends React.Component {
   }
 }
 
-export default withRouter(PostPage);
+export default withRouter(PostPage);  

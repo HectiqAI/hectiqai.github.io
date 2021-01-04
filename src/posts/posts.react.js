@@ -3,11 +3,13 @@ import DecadeOfSciencePost from "./DecadeOfSciencePost.react";
 import CatherineJoinsTeamPost from "./CatherineJoinsTeamPost.react";
 import EfficientNetPost from "./EfficientNetPost.react";
 import DAMPost from "./DAMPost.react";
+import DAMPostFR from "./DAMPostFR.react";
 import iOSPost from "./iOSPost.react";
 
 const data = [
   {
     date: "September 28, 2020",
+    dateFR: "28 septembre 2020",
     title: "Opportunities and challenge of machine learning on devices",
     frontImgUrl: '/assets/img/photos/iphone.jpg',
     frontWideImg: "/assets/img/photos/iphone.jpg",
@@ -21,23 +23,32 @@ const data = [
     lightHeader: true,
   },
   {
-    date: "September 28, 2020",
+    date: "December 10, 2020",
+    dateFR: "28 décembre 2020",
     title: "Helping a nonprofit organization in their fight against school dropout",
+    titleFR: "Mettre à profit notre expertise pour combattre le décrochage scolaire",
     frontImgUrl: '/assets/img/photos/ballon.jpg',
     frontWideImg: "/assets/img/photos/ballon.jpg",
     frontImgUrlWide: "/assets/img/photos/ballon.jpg",
-    summary: "The Diplome avant la Médaille is a nonprofit organization that needs to pair hundreds of students with volunteers according to their availabilities and preferences. They came to us to get a program to automatically obtain a great pairing solution.  ",
+    summary: "The Diplome avant la Médaille is a nonprofit organization that needs to pair hundreds of students with volunteers according to their availabilities and preferences. They came to us to get a program to automatically obtain a great pairing solution. Here's how we've helped. ",
+    summaryFR: "Le Diplôme avant la Médaille est un organisme qui favorise la réussite scolaire notamment en organisant du tutorat. Ils ont voulu avoir une solution automatique pour jumeler les jeunes avec les meilleurs bénévoles. Voici comment nous nous y sommes pris. ",
     authors: ["Edward Laurence"],
     by: "Edward Laurence, Data Scientist at Hectiq.AI",
+    byFR: "Edward Laurence, Scientifique des données chez Hectiq.AI",
     credits: "Lead photo by <a href='https://unsplash.com/@patrick_schneider'>Patrick Schneider</a>",
+    creditsFR: "Photo par <a href='https://unsplash.com/@patrick_schneider'>Patrick Schneider</a>",
     content: DAMPost,
+    contentFR: DAMPostFR,
     id: "dampost",
     moreInfo: "Check and support DAM's program <a href='https://diplomeavantlamedaille.org'>here</a>.",
+    moreInfoFR: "Supporter et consulter leur programme <a href='https://diplomeavantlamedaille.org'>ici</a>.",
+    noteFR: "Le genre masculin est utilisé pour simplifier l'écriture.",
     hide: false,
     lightHeader: true,
   },
   {
     date: "June 10, 2020",
+    dateFR: "10 juin 2020",
     title: "EfficientNet1D: A beast among the miniatures",
     excerpt: "In our efforts to make machine learning accessible for everyone,  we are releasing our 1D implementation of the fairly recent family of models: EfficientNet based on the PyTorch.",
     summary: "In our efforts to make machine learning accessible for everyone,  we are releasing our 1D implementation of the fairly recent family of models: EfficientNet based on the PyTorch.",
@@ -49,6 +60,7 @@ const data = [
   },
   {
     date: "March 30, 2020",
+    dateFR: "30 mars 2020",
     title: "Vox Media: Building a privacy-friendly first-party data segmentation platform",
     excerpt: "Hectiq.AI completes an exciting collaboration with Vox Media. We have developed an Ai model to help Vox Media better understand their audience. The challenge was tough as the model needed to be privacy-friendly, crazy fast, and highly effective.",
     frontImgUrl: '/assets/img/photos/voxmediapost.svg',
@@ -65,6 +77,7 @@ const data = [
   },
   {
     date: "February 19, 2020",
+    dateFR: "19 février 2020",
     title: "A decade of Data Science hypes: The Good Parts",
     excerpt: "In this post, I look back at some of the trends & hypes that punctuated the Data Science world in the last years and take some notes on the lasting impacts they had.",
     frontImgUrl: "/assets/img/photos/idea.jpg",
@@ -77,6 +90,7 @@ const data = [
   },
   {
     date: "September 30, 2019",
+    dateFR: "30 septembre 2019",
     title: "Hectiq.ai welcomes a new member",
     excerpt: "Catherine Paulin is joining hectiq.ai to bring balance to the force.",
     frontImgUrlWide: "",
@@ -86,6 +100,7 @@ const data = [
   },
   {
     date: "September 1, 2019",
+    dateFR: "1er septembre 2019",
     title: "Hectiq.ai has a new blog",
     excerpt: "We are proud to announce this new blog website! It will feature our recent achievements and news.",
     frontImgUrlWide: "",
