@@ -3,11 +3,9 @@ deploy-local: ## Locally host the app
 	yarn start
 
 .PHONY: build
-deploy-prod: ## Create build
+build: ## Create build
 	yarn build
 
-.PHONY: help
-help:
-	@awk -F ':|##' '/^[^\t].+?:.*?##/ {\
-	printf "\033[36m%-30s\033[0m %s\n", $$1, $$NF \
-	}' $(MAKEFILE_LIST)
+.PHONY: deploy-prod
+deploy-prod: ## Push build on GCP storage
+	gsutil -m rsync -r build gs://blog.hectiq.ai
